@@ -1,0 +1,8 @@
+/home/wdr/ros_ws/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/Armor.idl
+/home/wdr/ros_ws/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/Armors.idl
+/home/wdr/ros_ws/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/Target.idl
+/home/wdr/ros_ws/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/DebugLight.idl
+/home/wdr/ros_ws/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/DebugLights.idl
+/home/wdr/ros_ws/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/DebugArmor.idl
+/home/wdr/ros_ws/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/DebugArmors.idl
+/home/wdr/ros_ws/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/TrackerInfo.idl

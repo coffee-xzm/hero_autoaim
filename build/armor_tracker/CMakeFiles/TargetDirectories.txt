@@ -1,0 +1,11 @@
+/home/wdr/ros_ws/build/armor_tracker/CMakeFiles/uninstall.dir
+/home/wdr/ros_ws/build/armor_tracker/CMakeFiles/armor_tracker_uninstall.dir
+/home/wdr/ros_ws/build/armor_tracker/CMakeFiles/armor_tracker.dir
+/home/wdr/ros_ws/build/armor_tracker/CMakeFiles/armor_tracker_node.dir
+/home/wdr/ros_ws/build/armor_tracker/CMakeFiles/test.dir
+/home/wdr/ros_ws/build/armor_tracker/CMakeFiles/edit_cache.dir
+/home/wdr/ros_ws/build/armor_tracker/CMakeFiles/rebuild_cache.dir
+/home/wdr/ros_ws/build/armor_tracker/CMakeFiles/list_install_components.dir
+/home/wdr/ros_ws/build/armor_tracker/CMakeFiles/install.dir
+/home/wdr/ros_ws/build/armor_tracker/CMakeFiles/install/local.dir
+/home/wdr/ros_ws/build/armor_tracker/CMakeFiles/install/strip.dir
