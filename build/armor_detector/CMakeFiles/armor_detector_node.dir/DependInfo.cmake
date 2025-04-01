@@ -11,8 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/wdr/ros_ws/build/armor_detector/rclcpp_components/node_main_armor_detector_node.cpp" "CMakeFiles/armor_detector_node.dir/rclcpp_components/node_main_armor_detector_node.cpp.o" "gcc" "CMakeFiles/armor_detector_node.dir/rclcpp_components/node_main_armor_detector_node.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
