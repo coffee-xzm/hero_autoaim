@@ -1,0 +1,16 @@
+## package
+#### 构成
+cmake | python
+CMakeLists.txt | setup.py(构建) & resource/<package_name>(标记文件) & setup.cfg(入口点配置)
+include/<package_name> |   
+src | <package_name>
+#### 构建与编译
+ros2 pkg create --build-type ament_<cmake/python> --license Apache-2.0 --node-name my_node my_package
+colcon build
+
+
+ros2 run camera_calibration cameracalibrator \
+  --size 8x6 \
+  --square 0.028 \
+  -k 3 \
+  --fix-aspect-ratio
