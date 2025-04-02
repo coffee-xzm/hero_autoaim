@@ -1,1 +1,0 @@
-/home/coffee/ros_ws/src/ros2_hik_camera/launch/hik_camera.launch.py

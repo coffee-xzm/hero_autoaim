@@ -1,1 +1,0 @@
-/home/coffee/ros_ws/build/auto_aim_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake

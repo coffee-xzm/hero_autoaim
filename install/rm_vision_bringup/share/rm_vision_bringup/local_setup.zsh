@@ -1,1 +1,0 @@
-/home/coffee/ros_ws/build/rm_vision_bringup/ament_cmake_environment_hooks/local_setup.zsh

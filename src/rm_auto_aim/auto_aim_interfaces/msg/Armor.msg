@@ -1,0 +1,6 @@
+string number
+string type
+float32 distance_to_image_center
+float32 y_coordinate_in_camera_frame
+geometry_msgs/Pose pose
+geometry_msgs/Pose base_link_pose
