@@ -1,0 +1,1 @@
+/home/coffee/rv_rv2/build/hik_camera/ament_cmake_environment_hooks/local_setup.zsh

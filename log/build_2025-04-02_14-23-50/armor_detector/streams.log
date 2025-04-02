@@ -1,0 +1,49 @@
+[0.297s] Invoking command in '/home/coffee/rv_rv2/build/armor_detector': AMENT_PREFIX_PATH=/home/coffee/rv_rv2/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/coffee/rv_rv2/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/coffee/rv_rv2/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/coffee/rv_rv2/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/coffee/rv_rv2/build/armor_detector -- -j32 -l32
+[0.326s] [35m[1mConsolidate compiler generated dependencies of target armor_detector[0m
+[0.327s] [ 13%] Built target gtest_main
+[0.327s] [ 26%] Built target gtest
+[0.327s] [ 40%] Built target armor_detector_node
+[0.341s] [ 46%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector.cpp.o[0m
+[1.651s] [ 53%] [32m[1mLinking CXX shared library libarmor_detector.so[0m
+[3.805s] [ 73%] Built target armor_detector
+[3.813s] [35m[1mConsolidate compiler generated dependencies of target test_number_cls[0m
+[3.813s] [35m[1mConsolidate compiler generated dependencies of target test_node_startup[0m
+[3.820s] [ 80%] [32m[1mLinking CXX executable test_number_cls[0m
+[3.824s] [ 86%] [32m[1mLinking CXX executable test_node_startup[0m
+[4.919s] [ 93%] Built target test_number_cls
+[4.924s] [100%] Built target test_node_startup
+[4.930s] Invoked command in '/home/coffee/rv_rv2/build/armor_detector' returned '0': AMENT_PREFIX_PATH=/home/coffee/rv_rv2/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/coffee/rv_rv2/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/coffee/rv_rv2/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/coffee/rv_rv2/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/coffee/rv_rv2/build/armor_detector -- -j32 -l32
+[4.931s] Invoking command in '/home/coffee/rv_rv2/build/armor_detector': AMENT_PREFIX_PATH=/home/coffee/rv_rv2/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/coffee/rv_rv2/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/coffee/rv_rv2/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/coffee/rv_rv2/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/coffee/rv_rv2/build/armor_detector
+[4.934s] -- Install configuration: ""
+[4.935s] -- Execute custom install script
+[4.936s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/lib/armor_detector/armor_detector_node
+[4.936s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/include/armor_detector/armor.hpp
+[4.936s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/include/armor_detector/detector.hpp
+[4.936s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/include/armor_detector/detector_node.hpp
+[4.936s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/include/armor_detector/number_classifier.hpp
+[4.936s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/include/armor_detector/pnp_solver.hpp
+[4.936s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/environment/library_path.sh
+[4.936s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/environment/library_path.dsv
+[4.937s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/lib/libarmor_detector.so
+[4.938s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/model/label.txt
+[4.938s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/model/mlp.onnx
+[4.938s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/ament_index/resource_index/package_run_dependencies/armor_detector
+[4.938s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/ament_index/resource_index/parent_prefix_path/armor_detector
+[4.938s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/environment/ament_prefix_path.sh
+[4.939s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/environment/ament_prefix_path.dsv
+[4.939s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/environment/path.sh
+[4.939s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/environment/path.dsv
+[4.939s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/local_setup.bash
+[4.939s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/local_setup.sh
+[4.939s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/local_setup.zsh
+[4.939s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/local_setup.dsv
+[4.939s] -- Symlinking: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/package.dsv
+[4.943s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/ament_index/resource_index/packages/armor_detector
+[4.943s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/ament_index/resource_index/rclcpp_components/armor_detector
+[4.943s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.943s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.944s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/cmake/ament_cmake_export_libraries-extras.cmake
+[4.944s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/cmake/armor_detectorConfig.cmake
+[4.944s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/cmake/armor_detectorConfig-version.cmake
+[4.944s] -- Up-to-date symlink: /home/coffee/rv_rv2/install/armor_detector/share/armor_detector/package.xml
+[4.946s] Invoked command in '/home/coffee/rv_rv2/build/armor_detector' returned '0': AMENT_PREFIX_PATH=/home/coffee/rv_rv2/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/coffee/rv_rv2/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/coffee/rv_rv2/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/coffee/rv_rv2/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/coffee/rv_rv2/build/armor_detector

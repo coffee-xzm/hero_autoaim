@@ -1,0 +1,17 @@
+In file included from [01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector.cpp:16[m[K:
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/include/armor_detector/detector.hpp:[m[K In constructor ‘[01m[Krm_auto_aim::Detector::Detector(const int&, const int&, const rm_auto_aim::Detector::LightParams&, const rm_auto_aim::Detector::ArmorParams&, const bool&)[m[K’:
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/include/armor_detector/detector.hpp:64:7:[m[K [01;31m[Kerror: [m[K‘[01m[Krm_auto_aim::Detector::detect_color[m[K’ will be initialized after [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+   64 |   int [01;31m[Kdetect_color[m[K;
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector.cpp:16[m[K:
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/include/armor_detector/detector.hpp:49:8:[m[K [01;31m[Kerror: [m[K  ‘[01m[Kbool rm_auto_aim::Detector::light_modifybycolor[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+   49 |   bool [01;31m[Klight_modifybycolor[m[K;
+      |        [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector.cpp:22:1:[m[K [01;31m[Kerror: [m[K  when initialized here [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+   22 | [01;31m[KDetector[m[K::Detector(
+      | [01;31m[K^~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/armor_detector.dir/build.make:76: CMakeFiles/armor_detector.dir/src/detector.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:161: CMakeFiles/armor_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

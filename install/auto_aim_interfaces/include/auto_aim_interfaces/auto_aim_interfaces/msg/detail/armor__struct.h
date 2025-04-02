@@ -1,0 +1,1 @@
+/home/coffee/rv_rv2/build/auto_aim_interfaces/rosidl_generator_c/auto_aim_interfaces/msg/detail/armor__struct.h

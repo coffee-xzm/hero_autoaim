@@ -1,0 +1,127 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found OpenCV: /usr (found version "4.5.4") 
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found image_transport: 3.1.10 (/opt/ros/humble/share/image_transport/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Added test 'clang_format' to check C / C++ code style
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/coffee/rv_rv2/build/armor_detector
+[  6%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/armor_detector_node.dir/rclcpp_components/node_main_armor_detector_node.cpp.o[0m
+[ 20%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector_node.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o[0m
+[ 53%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 53%] Built target gtest_main
+In file included from [01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector.cpp:16[m[K:
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/include/armor_detector/detector.hpp:[m[K In constructor ‘[01m[Krm_auto_aim::Detector::Detector(const int&, const int&, const rm_auto_aim::Detector::LightParams&, const rm_auto_aim::Detector::ArmorParams&, const bool&)[m[K’:
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/include/armor_detector/detector.hpp:66:15:[m[K [01;31m[Kerror: [m[K‘[01m[Krm_auto_aim::Detector::a[m[K’ will be initialized after [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+   66 |   ArmorParams [01;31m[Ka[m[K;
+      |               [01;31m[K^[m[K
+In file included from [01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector.cpp:16[m[K:
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/include/armor_detector/detector.hpp:49:8:[m[K [01;31m[Kerror: [m[K  ‘[01m[Kbool rm_auto_aim::Detector::light_modifybycolor[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+   49 |   bool [01;31m[Klight_modifybycolor[m[K;
+      |        [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector.cpp:22:1:[m[K [01;31m[Kerror: [m[K  when initialized here [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+   22 | [01;31m[KDetector[m[K::Detector(
+      | [01;31m[K^~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/armor_detector.dir/build.make:76: CMakeFiles/armor_detector.dir/src/detector.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[ 60%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 60%] Built target gtest
+[ 66%] [32m[1mLinking CXX executable armor_detector_node[0m
+[ 66%] Built target armor_detector_node
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector_node.cpp:[m[K In member function ‘[01m[Kstd::unique_ptr<rm_auto_aim::Detector> rm_auto_aim::ArmorDetectorNode::initDetector()[m[K’:
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector_node.cpp:161:8:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Klight_modifybycolor[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+  161 |   auto [01;31m[Klight_modifybycolor[m[K = this->declare_parameter<bool>("light_modifybycolor", false);
+      |        [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector_node.cpp:[m[K In member function ‘[01m[Kstd::vector<rm_auto_aim::Armor> rm_auto_aim::ArmorDetectorNode::detectArmors(const ConstSharedPtr&)[m[K’:
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector_node.cpp:235:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct auto_aim_interfaces::msg::DebugLight_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kcenter[m[K’; did you mean ‘[01m[Kcenter_x[m[K’?
+  235 |       light.center_y = light.[01;31m[Kcenter[m[K.y;
+      |                              [01;31m[K^~~~~~[m[K
+      |                              [32m[Kcenter_x[m[K
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector_node.cpp:236:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct auto_aim_interfaces::msg::DebugLight_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktop[m[K’; did you mean ‘[01m[Ktop_x[m[K’?
+  236 |       light.top_x = light.[01;31m[Ktop[m[K.x;
+      |                           [01;31m[K^~~[m[K
+      |                           [32m[Ktop_x[m[K
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector_node.cpp:237:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct auto_aim_interfaces::msg::DebugLight_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktop[m[K’; did you mean ‘[01m[Ktop_x[m[K’?
+  237 |       light.top_y = light.[01;31m[Ktop[m[K.y;
+      |                           [01;31m[K^~~[m[K
+      |                           [32m[Ktop_x[m[K
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector_node.cpp:238:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct auto_aim_interfaces::msg::DebugLight_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kbottom[m[K’; did you mean ‘[01m[Kbottom_x[m[K’?
+  238 |       light.bottom_x = light.[01;31m[Kbottom[m[K.x;
+      |                              [01;31m[K^~~~~~[m[K
+      |                              [32m[Kbottom_x[m[K
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector_node.cpp:239:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct auto_aim_interfaces::msg::DebugLight_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kbottom[m[K’; did you mean ‘[01m[Kbottom_x[m[K’?
+  239 |       light.bottom_y = light.[01;31m[Kbottom[m[K.y;
+      |                              [01;31m[K^~~~~~[m[K
+      |                              [32m[Kbottom_x[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:10[m[K,
+                 from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:40[m[K,
+                 from [01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector_node.cpp:4[m[K:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘[01m[Ktypename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = rm_auto_aim::Detector; _Args = {int&, long int&, rm_auto_aim::Detector::LightParams&, rm_auto_aim::Detector::ArmorParams&}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<rm_auto_aim::Detector>][m[K’:
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector_node.cpp:188:45:[m[K   required from here
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:962:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krm_auto_aim::Detector::Detector(int&, long int&, rm_auto_aim::Detector::LightParams&, rm_auto_aim::Detector::ArmorParams&)[m[K’
+  962 |     { return unique_ptr<_Tp>([01;31m[Knew _Tp(std::forward<_Args>(__args)...)[m[K); }
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/include/armor_detector/detector_node.hpp:22[m[K,
+                 from [01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/src/detector_node.cpp:25[m[K:
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/include/armor_detector/detector.hpp:51:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krm_auto_aim::Detector::Detector(const int&, const int&, const rm_auto_aim::Detector::LightParams&, const rm_auto_aim::Detector::ArmorParams&, const bool&)[m[K’
+   51 |   [01;36m[KDetector[m[K(const int & bin_thres, const int & color, const LightParams & l, const ArmorParams & a, const bool & modifybycolor);
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/include/armor_detector/detector.hpp:51:3:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 4 provided
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/include/armor_detector/detector.hpp:23:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krm_auto_aim::Detector::Detector(rm_auto_aim::Detector&&)[m[K’
+   23 | class [01;36m[KDetector[m[K
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/coffee/rv_rv2/src/rm_auto_aim/armor_detector/include/armor_detector/detector.hpp:23:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/armor_detector.dir/build.make:90: CMakeFiles/armor_detector.dir/src/detector_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:161: CMakeFiles/armor_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

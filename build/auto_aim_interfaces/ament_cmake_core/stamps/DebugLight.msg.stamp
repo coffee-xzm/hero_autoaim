@@ -1,0 +1,9 @@
+int32 center_x
+int32 center_y
+bool is_light
+float32 ratio
+float32 angle
+int32 top_x
+int32 top_y
+int32 bottom_x
+int32 bottom_y
