@@ -1,1 +1,0 @@
-/home/coffee/rv_rv2/build/rm_serial_driver/ament_cmake_core/rm_serial_driverConfig.cmake

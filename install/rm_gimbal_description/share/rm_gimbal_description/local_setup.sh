@@ -1,1 +1,0 @@
-/home/coffee/rv_rv2/build/rm_gimbal_description/ament_cmake_environment_hooks/local_setup.sh

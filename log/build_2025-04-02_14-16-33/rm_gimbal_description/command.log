@@ -1,4 +1,0 @@
-Invoking command in '/home/coffee/rv_rv2/build/rm_gimbal_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/coffee/rv_rv2/build/rm_gimbal_description -- -j32 -l32
-Invoked command in '/home/coffee/rv_rv2/build/rm_gimbal_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/coffee/rv_rv2/build/rm_gimbal_description -- -j32 -l32
-Invoking command in '/home/coffee/rv_rv2/build/rm_gimbal_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/coffee/rv_rv2/build/rm_gimbal_description
-Invoked command in '/home/coffee/rv_rv2/build/rm_gimbal_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/coffee/rv_rv2/build/rm_gimbal_description

@@ -1,1 +1,0 @@
-/home/coffee/rv_rv2/build/armor_detector/ament_cmake_core/armor_detectorConfig-version.cmake

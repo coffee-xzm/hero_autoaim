@@ -1,1 +1,0 @@
-/home/coffee/rv_rv2/src/rm_auto_aim/auto_aim_interfaces/msg/Armor.msg
