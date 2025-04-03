@@ -7,3 +7,5 @@ int32 top_x
 int32 top_y
 int32 bottom_x
 int32 bottom_y
+int32[] contour_x
+int32[] contour_y

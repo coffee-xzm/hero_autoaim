@@ -77,74 +77,7 @@ std::vector<Light> Detector::findLights(const cv::Mat & rbg_img, const cv::Mat &
     bool is_fill_rotated_rect =
       points.size() / (r_rect.size.width * r_rect.size.height) > l.min_fill_ratio;
 
-    if(light_modifybycolor)
-    {
-      // 扩展旋转矩形的尺寸
-      cv::Size2f expanded_size(r_rect.size.width + 10, r_rect.size.height + 10); // 向四周扩展5像素
-      cv::RotatedRect expanded_rect(r_rect.center, expanded_size, r_rect.angle);
-
-      // 创建扩展矩形的掩码
-      cv::Mat expanded_mask = cv::Mat::zeros(rbg_img.size(), CV_8UC1);
-      cv::Point2f vertices[4];
-      expanded_rect.points(vertices);
-      std::vector<cv::Point> pts;
-      for (int i = 0; i < 4; i++) 
-      {
-          pts.push_back(cv::Point(vertices[i]));
-      }
-      cv::fillConvexPoly(expanded_mask, pts, 255);
-
-      // 基于颜色过滤
-      cv::Mat roi;
-      rbg_img.copyTo(roi, expanded_mask);
-      cv::Mat hsv;
-      cv::cvtColor(roi, hsv, cv::COLOR_BGR2HSV);
-
-      // 创建颜色过滤掩码
-      cv::Mat color_mask;
-      if (detect_color == RED)
-      {
-          // 红色HSV范围 (可能需要两个范围处理H通道的环绕)
-          cv::Mat mask1, mask2;
-          cv::inRange(hsv, cv::Scalar(0, 100, 100), cv::Scalar(10, 255, 255), mask1);
-          cv::inRange(hsv, cv::Scalar(160, 100, 100), cv::Scalar(180, 255, 255), mask2);
-          color_mask = mask1 | mask2;
-      }
-      else
-      {
-          // 蓝色HSV范围
-          cv::inRange(hsv, cv::Scalar(100, 100, 100), cv::Scalar(140, 255, 255), color_mask);
-      }
-
-      // 计算二值化占比
-      double fill_ratio = cv::countNonZero(color_mask) / (double)color_mask.total();
-      if (fill_ratio < l.min_fill_ratio) {
-          continue;  // 跳过占比过低的区域
-      }
-
-      // 优化颜色点提取 - 先进行形态学操作去除噪声
-      cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(3, 3));
-      cv::morphologyEx(color_mask, color_mask, cv::MORPH_OPEN, kernel);
-
-      // 提取颜色过滤后的轮廓点
-      std::vector<cv::Point> color_points;
-      cv::findNonZero(color_mask, color_points);
-
-      // 如果颜色点足够，用这些点代替原来的points进行拟合
-      if (color_points.size() > 10)
-      { // 确保有足够的点
-          // 创建原始图像坐标系下的点集（避免ROI带来的坐标偏移）
-          std::vector<cv::Point> global_color_points;
-          for (const auto& p : color_points)
-          {
-              cv::Point nonzero_pos = p; // 这是在掩码中的坐标，已经是全局坐标
-              global_color_points.push_back(nonzero_pos);
-          }
-          
-          // 使用新的颜色点集进行拟合
-          points = global_color_points;
-      }
-    }
+    
 
     cv::Vec4f return_param;
     cv::fitLine(points, return_param, cv::DIST_L2, 0, 0.01, 0.01);
@@ -169,28 +102,77 @@ std::vector<Light> Detector::findLights(const cv::Mat & rbg_img, const cv::Mat &
     light.bottom = bottom;
     light.tilt_angle = angle_k;
 
-    if (isLight(light) && is_fill_rotated_rect) 
+
+
+    if (isLight(light) && is_fill_rotated_rect)
     {
-      auto rect = light.boundingRect();
-      if (  // Avoid assertion failed
-        0 <= rect.x && 0 <= rect.width && rect.x + rect.width <= rbg_img.cols && 0 <= rect.y &&
-        0 <= rect.height && rect.y + rect.height <= rbg_img.rows) {
-        int sum_r = 0, sum_b = 0;
-        auto roi = rbg_img(rect);
-        // Iterate through the ROI
-        for (int i = 0; i < roi.rows; i++) {
-          for (int j = 0; j < roi.cols; j++) {
-            if (cv::pointPolygonTest(contour, cv::Point2f(j + rect.x, i + rect.y), false) >= 0) {
-              // if point is inside contour
-              sum_r += roi.at<cv::Vec3b>(i, j)[0];
-              sum_b += roi.at<cv::Vec3b>(i, j)[2];
+      if (light_modifybycolor) {
+        // Get ROI from original image
+        cv::Rect roi_rect = b_rect & cv::Rect(0, 0, rbg_img.cols, rbg_img.rows);
+        cv::Mat roi = rbg_img(roi_rect);
+        
+        // Convert to HSV for better color segmentation
+        cv::Mat hsv_roi;
+        cv::cvtColor(roi, hsv_roi, cv::COLOR_RGB2HSV);
+        
+        // Define color range based on detected color
+        cv::Scalar lower, upper;
+        if (light.color == RED) {
+          lower = cv::Scalar(0, 100, 100);
+          upper = cv::Scalar(10, 255, 255);
+        } else { // BLUE
+          lower = cv::Scalar(100, 100, 100);
+          upper = cv::Scalar(130, 255, 255);
+        }
+        
+        // Create mask based on color
+        cv::Mat color_mask;
+        cv::inRange(hsv_roi, lower, upper, color_mask);
+        
+        // Find new contours from color mask
+        std::vector<std::vector<cv::Point>> color_contours;
+        cv::findContours(color_mask, color_contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+        
+        if (!color_contours.empty()) {
+          // Find largest contour
+          auto max_contour = *std::max_element(color_contours.begin(), color_contours.end(),
+            [](const std::vector<cv::Point>& c1, const std::vector<cv::Point>& c2) {
+              return cv::contourArea(c1) < cv::contourArea(c2);
+            });
+          
+          // Adjust points to original image coordinates
+          for (auto& p : max_contour) {
+            p += cv::Point(roi_rect.x, roi_rect.y);
+          }
+          
+          // Update light with new contour
+          light = Light(cv::minAreaRect(max_contour));
+          
+          // Update corner points
+          std::vector<cv::Point2f> corners(4);
+          light.points(corners.data());
+          light.top = (corners[0] + corners[1]) * 0.5;
+          light.bottom = (corners[2] + corners[3]) * 0.5;//可能需要改为最小二乘
+          
+          // Store contour points for visualization
+          if (!debug_lights.empty()) {
+            auto& debug_light = debug_lights.back();
+            debug_light.contour_x.clear();
+            debug_light.contour_y.clear();
+            
+            // Simplify contour and store points
+            std::vector<cv::Point> approx_contour;
+            cv::approxPolyDP(max_contour, approx_contour, 1.0, true);
+            
+            for (const auto& p : approx_contour) {
+              debug_light.contour_x.push_back(p.x);
+              debug_light.contour_y.push_back(p.y);
             }
           }
         }
-        // Sum of red pixels > sum of blue pixels ?
-        light.color = sum_r > sum_b ? RED : BLUE;
-        lights.emplace_back(light);
       }
+      
+      lights.emplace_back(light);
     }
   }
 
