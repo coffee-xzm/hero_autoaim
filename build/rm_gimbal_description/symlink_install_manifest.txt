@@ -1,0 +1,17 @@
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/urdf/rm_gimbal.urdf.xacro
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/urdf/rm_gimbal.urdf.xacro:Zone.Identifier
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/ament_index/resource_index/package_run_dependencies/rm_gimbal_description
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/ament_index/resource_index/parent_prefix_path/rm_gimbal_description
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/environment/ament_prefix_path.sh
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/environment/ament_prefix_path.dsv
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/environment/path.sh
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/environment/path.dsv
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.bash
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.sh
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.zsh
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.dsv
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/package.dsv
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/ament_index/resource_index/packages/rm_gimbal_description
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/cmake/rm_gimbal_descriptionConfig.cmake
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/cmake/rm_gimbal_descriptionConfig-version.cmake
+/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/package.xml

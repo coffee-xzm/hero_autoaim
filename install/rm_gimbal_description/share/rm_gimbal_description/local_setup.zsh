@@ -1,0 +1,1 @@
+/home/coffee/rv_autokal/build/rm_gimbal_description/ament_cmake_environment_hooks/local_setup.zsh

@@ -1,0 +1,1 @@
+/home/coffee/rv_autokal/build/rm_vision_bringup/ament_cmake_core/rm_vision_bringupConfig.cmake

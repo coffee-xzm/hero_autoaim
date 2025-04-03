@@ -1,0 +1,1 @@
+/home/coffee/rv_autokal/build/hik_camera/ament_cmake_environment_hooks/local_setup.bash
