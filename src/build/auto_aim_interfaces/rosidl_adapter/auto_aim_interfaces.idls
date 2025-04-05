@@ -1,8 +1,0 @@
-/home/coffee/rv_autokal/src/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/Armor.idl
-/home/coffee/rv_autokal/src/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/Armors.idl
-/home/coffee/rv_autokal/src/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/Target.idl
-/home/coffee/rv_autokal/src/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/DebugLight.idl
-/home/coffee/rv_autokal/src/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/DebugLights.idl
-/home/coffee/rv_autokal/src/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/DebugArmor.idl
-/home/coffee/rv_autokal/src/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/DebugArmors.idl
-/home/coffee/rv_autokal/src/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/TrackerInfo.idl

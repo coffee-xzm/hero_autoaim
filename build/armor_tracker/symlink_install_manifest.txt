@@ -1,10 +1,7 @@
 /home/coffee/rv_autokal/install/armor_tracker/lib/armor_tracker/armor_tracker_node
 /home/coffee/rv_autokal/install/armor_tracker/include/armor_tracker/extended_kalman_filter.hpp
-/home/coffee/rv_autokal/install/armor_tracker/include/armor_tracker/extended_kalman_filter.hpp:Zone.Identifier
 /home/coffee/rv_autokal/install/armor_tracker/include/armor_tracker/tracker.hpp
-/home/coffee/rv_autokal/install/armor_tracker/include/armor_tracker/tracker.hpp:Zone.Identifier
 /home/coffee/rv_autokal/install/armor_tracker/include/armor_tracker/tracker_node.hpp
-/home/coffee/rv_autokal/install/armor_tracker/include/armor_tracker/tracker_node.hpp:Zone.Identifier
 /home/coffee/rv_autokal/install/armor_tracker/share/armor_tracker/environment/library_path.sh
 /home/coffee/rv_autokal/install/armor_tracker/share/armor_tracker/environment/library_path.dsv
 /home/coffee/rv_autokal/install/armor_tracker/lib/libarmor_tracker.so
