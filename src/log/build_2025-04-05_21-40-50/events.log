@@ -1,0 +1,576 @@
+[0.000000] (-) TimerEvent: {}
+[0.000358] (-) JobUnselected: {'identifier': 'armor_detector'}
+[0.000426] (-) JobUnselected: {'identifier': 'armor_tracker'}
+[0.000439] (-) JobUnselected: {'identifier': 'hik_camera'}
+[0.000449] (-) JobUnselected: {'identifier': 'rm_gimbal_description'}
+[0.000459] (-) JobUnselected: {'identifier': 'rm_serial_driver'}
+[0.000482] (-) JobUnselected: {'identifier': 'rm_vision_bringup'}
+[0.000507] (auto_aim_interfaces) JobQueued: {'identifier': 'auto_aim_interfaces', 'dependencies': OrderedDict()}
+[0.001289] (auto_aim_interfaces) JobStarted: {'identifier': 'auto_aim_interfaces'}
+[0.009112] (auto_aim_interfaces) JobProgress: {'identifier': 'auto_aim_interfaces', 'progress': 'cmake'}
+[0.009600] (auto_aim_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/coffee/rv_autokal/src/rm_auto_aim/auto_aim_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/coffee/rv_autokal/src/install/auto_aim_interfaces'], 'cwd': '/home/coffee/rv_autokal/src/build/auto_aim_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('no_proxy', '192.168.*,172.31.*,172.30.*,172.29.*,172.28.*,172.27.*,172.26.*,172.25.*,172.24.*,172.23.*,172.22.*,172.21.*,172.20.*,172.19.*,172.18.*,172.17.*,172.16.*,10.*,127.*,localhost,<local>'), ('USER', 'coffee'), ('GIT_ASKPASS', '/home/coffee/.vscode-server/bin/cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/coffee'), ('OLDPWD', '/home/coffee/rv_autokal/src'), ('TERM_PROGRAM_VERSION', '1.96.4'), ('NO_PROXY', '192.168.*,172.31.*,172.30.*,172.29.*,172.28.*,172.27.*,172.26.*,172.25.*,172.24.*,172.23.*,172.22.*,172.21.*,172.20.*,172.19.*,172.18.*,172.17.*,172.16.*,10.*,127.*,localhost,<local>'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c7b93569-9867-4b52-9966-9315f49778dd.sock'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'cat'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/coffee/.vscode-server/bin/cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/coffee/.vscode-server/bin/cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'coffee'), ('NAME', 'coffee'), ('WSL_INTEROP', '/run/WSL/1791_interop'), ('http_proxy', 'http://127.0.0.1:7890'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/coffee/.vscode-server/bin/cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/MVS/Runtime/Win32_i86:/mnt/c/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/d/Bandizip/:/mnt/d/calibre/:/mnt/d/Scoop/apps/nodejs/22.6.0:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility:/mnt/d/matlab/bin:/mnt/d/serialplot/bin:/mnt/c/Users/64433/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/d/scoop/apps/openjdk/current/bin:/mnt/d/scoop/apps/vscode/current/bin:/mnt/c/Users/64433/.local/bin:/mnt/d/scoop/apps/python39/current/Scripts:/mnt/d/scoop/apps/python39/current:/mnt/d/scoop/apps/python27/current/Scripts:/mnt/d/scoop/apps/python27/current:/mnt/d/scoop/apps/nodejs/current/bin:/mnt/d/scoop/apps/nodejs/current:/mnt/d/scoop/apps/mingw/current/bin:/mnt/d/scoop/apps/latex/current/texmfs/install/miktex/bin/x64:/mnt/d/scoop/apps/gcc/current/bin:/mnt/d/scoop/apps/anaconda3/current/App/Scripts:/mnt/c/Users/64433/go/bin:/mnt/d/Scoop/shims:/mnt/c/Users/64433/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/64433/AppData/Local/Muse Hub/lib:/mnt/d/platform-tools-latest-windows/platform-tools:/mnt/d/Scoop/apps/hexo-client/current/HexoClient.exe:/mnt/d/Scoop/apps/nodejs/22.6.0/bin:/mnt/d/Scoop/apps/emax64-pdumper/20180619/bin/emacs.exe:/mnt/d/Scoop/apps/fiddler/5.0.20244.10953:/mnt/c/Users/64433/AppData/Local/Muse Hub/lib:/mnt/c/Scoop/apps/fiddler/5.0.20244.10953:/mnt/c/Users/64433/AppData/Local/Muse Hub/lib:/snap/bin:/home/coffee/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-615d85cdac.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PROMPT_COMMAND', '__vsc_prompt_cmd_original'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/coffee/rv_autokal/src/build/auto_aim_interfaces'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('VTE_VERSION', '0'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099966] (-) TimerEvent: {}
+[0.200279] (-) TimerEvent: {}
+[0.300610] (-) TimerEvent: {}
+[0.400862] (-) TimerEvent: {}
+[0.501236] (-) TimerEvent: {}
+[0.588058] (auto_aim_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.601542] (-) TimerEvent: {}
+[0.701820] (-) TimerEvent: {}
+[0.802167] (-) TimerEvent: {}
+[0.902496] (-) TimerEvent: {}
+[1.002750] (-) TimerEvent: {}
+[1.103036] (-) TimerEvent: {}
+[1.203422] (-) TimerEvent: {}
+[1.303708] (-) TimerEvent: {}
+[1.403979] (-) TimerEvent: {}
+[1.504250] (-) TimerEvent: {}
+[1.604514] (-) TimerEvent: {}
+[1.704814] (-) TimerEvent: {}
+[1.805086] (-) TimerEvent: {}
+[1.905332] (-) TimerEvent: {}
+[2.005592] (-) TimerEvent: {}
+[2.105838] (-) TimerEvent: {}
+[2.206085] (-) TimerEvent: {}
+[2.306329] (-) TimerEvent: {}
+[2.378106] (auto_aim_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.406418] (-) TimerEvent: {}
+[2.506749] (-) TimerEvent: {}
+[2.607040] (-) TimerEvent: {}
+[2.707341] (-) TimerEvent: {}
+[2.807600] (-) TimerEvent: {}
+[2.907877] (-) TimerEvent: {}
+[3.008144] (-) TimerEvent: {}
+[3.108356] (-) TimerEvent: {}
+[3.208632] (-) TimerEvent: {}
+[3.308928] (-) TimerEvent: {}
+[3.409187] (-) TimerEvent: {}
+[3.509456] (-) TimerEvent: {}
+[3.523694] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.609562] (-) TimerEvent: {}
+[3.710297] (-) TimerEvent: {}
+[3.810624] (-) TimerEvent: {}
+[3.910902] (-) TimerEvent: {}
+[4.011197] (-) TimerEvent: {}
+[4.111505] (-) TimerEvent: {}
+[4.211795] (-) TimerEvent: {}
+[4.312055] (-) TimerEvent: {}
+[4.324664] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.328348] (auto_aim_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.330042] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.330720] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.334042] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.412153] (-) TimerEvent: {}
+[4.512433] (-) TimerEvent: {}
+[4.612717] (-) TimerEvent: {}
+[4.713157] (-) TimerEvent: {}
+[4.758447] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.762123] (auto_aim_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.762344] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.762593] (auto_aim_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.781496] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.813282] (-) TimerEvent: {}
+[4.875277] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.913355] (-) TimerEvent: {}
+[4.954499] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[4.958969] (auto_aim_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.964421] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.013461] (-) TimerEvent: {}
+[5.113748] (-) TimerEvent: {}
+[5.214025] (-) TimerEvent: {}
+[5.314287] (-) TimerEvent: {}
+[5.357610] (auto_aim_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.388034] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[5.414399] (-) TimerEvent: {}
+[5.514737] (-) TimerEvent: {}
+[5.615012] (-) TimerEvent: {}
+[5.624358] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[5.715113] (-) TimerEvent: {}
+[5.777112] (auto_aim_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.815209] (-) TimerEvent: {}
+[5.915483] (-) TimerEvent: {}
+[5.972886] (auto_aim_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.015582] (-) TimerEvent: {}
+[6.115803] (-) TimerEvent: {}
+[6.216048] (-) TimerEvent: {}
+[6.316365] (-) TimerEvent: {}
+[6.416639] (-) TimerEvent: {}
+[6.517002] (-) TimerEvent: {}
+[6.617288] (-) TimerEvent: {}
+[6.717656] (-) TimerEvent: {}
+[6.806606] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[6.808247] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[6.817788] (-) TimerEvent: {}
+[6.918029] (-) TimerEvent: {}
+[7.018303] (-) TimerEvent: {}
+[7.118570] (-) TimerEvent: {}
+[7.218913] (-) TimerEvent: {}
+[7.319218] (-) TimerEvent: {}
+[7.419480] (-) TimerEvent: {}
+[7.519901] (-) TimerEvent: {}
+[7.620159] (-) TimerEvent: {}
+[7.720621] (-) TimerEvent: {}
+[7.820889] (-) TimerEvent: {}
+[7.921150] (-) TimerEvent: {}
+[8.021481] (-) TimerEvent: {}
+[8.121829] (-) TimerEvent: {}
+[8.222104] (-) TimerEvent: {}
+[8.322362] (-) TimerEvent: {}
+[8.422578] (-) TimerEvent: {}
+[8.522922] (-) TimerEvent: {}
+[8.623335] (-) TimerEvent: {}
+[8.723623] (-) TimerEvent: {}
+[8.823902] (-) TimerEvent: {}
+[8.924164] (-) TimerEvent: {}
+[9.024504] (-) TimerEvent: {}
+[9.124880] (-) TimerEvent: {}
+[9.225286] (-) TimerEvent: {}
+[9.325714] (-) TimerEvent: {}
+[9.390315] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[9.390458] (auto_aim_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[9.390512] (auto_aim_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[9.390550] (auto_aim_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[9.402826] (auto_aim_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[9.425808] (-) TimerEvent: {}
+[9.526058] (-) TimerEvent: {}
+[9.626314] (-) TimerEvent: {}
+[9.670982] (auto_aim_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.706461] (auto_aim_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[9.713259] (auto_aim_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/coffee/rv_autokal/src/build/auto_aim_interfaces\n'}
+[9.720929] (auto_aim_interfaces) CommandEnded: {'returncode': 0}
+[9.721427] (auto_aim_interfaces) JobProgress: {'identifier': 'auto_aim_interfaces', 'progress': 'build'}
+[9.722270] (auto_aim_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/coffee/rv_autokal/src/build/auto_aim_interfaces', '--', '-j32', '-l32'], 'cwd': '/home/coffee/rv_autokal/src/build/auto_aim_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('no_proxy', '192.168.*,172.31.*,172.30.*,172.29.*,172.28.*,172.27.*,172.26.*,172.25.*,172.24.*,172.23.*,172.22.*,172.21.*,172.20.*,172.19.*,172.18.*,172.17.*,172.16.*,10.*,127.*,localhost,<local>'), ('USER', 'coffee'), ('GIT_ASKPASS', '/home/coffee/.vscode-server/bin/cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/coffee'), ('OLDPWD', '/home/coffee/rv_autokal/src'), ('TERM_PROGRAM_VERSION', '1.96.4'), ('NO_PROXY', '192.168.*,172.31.*,172.30.*,172.29.*,172.28.*,172.27.*,172.26.*,172.25.*,172.24.*,172.23.*,172.22.*,172.21.*,172.20.*,172.19.*,172.18.*,172.17.*,172.16.*,10.*,127.*,localhost,<local>'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c7b93569-9867-4b52-9966-9315f49778dd.sock'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'cat'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/coffee/.vscode-server/bin/cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/coffee/.vscode-server/bin/cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'coffee'), ('NAME', 'coffee'), ('WSL_INTEROP', '/run/WSL/1791_interop'), ('http_proxy', 'http://127.0.0.1:7890'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/coffee/.vscode-server/bin/cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/MVS/Runtime/Win32_i86:/mnt/c/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/d/Bandizip/:/mnt/d/calibre/:/mnt/d/Scoop/apps/nodejs/22.6.0:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility:/mnt/d/matlab/bin:/mnt/d/serialplot/bin:/mnt/c/Users/64433/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/d/scoop/apps/openjdk/current/bin:/mnt/d/scoop/apps/vscode/current/bin:/mnt/c/Users/64433/.local/bin:/mnt/d/scoop/apps/python39/current/Scripts:/mnt/d/scoop/apps/python39/current:/mnt/d/scoop/apps/python27/current/Scripts:/mnt/d/scoop/apps/python27/current:/mnt/d/scoop/apps/nodejs/current/bin:/mnt/d/scoop/apps/nodejs/current:/mnt/d/scoop/apps/mingw/current/bin:/mnt/d/scoop/apps/latex/current/texmfs/install/miktex/bin/x64:/mnt/d/scoop/apps/gcc/current/bin:/mnt/d/scoop/apps/anaconda3/current/App/Scripts:/mnt/c/Users/64433/go/bin:/mnt/d/Scoop/shims:/mnt/c/Users/64433/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/64433/AppData/Local/Muse Hub/lib:/mnt/d/platform-tools-latest-windows/platform-tools:/mnt/d/Scoop/apps/hexo-client/current/HexoClient.exe:/mnt/d/Scoop/apps/nodejs/22.6.0/bin:/mnt/d/Scoop/apps/emax64-pdumper/20180619/bin/emacs.exe:/mnt/d/Scoop/apps/fiddler/5.0.20244.10953:/mnt/c/Users/64433/AppData/Local/Muse Hub/lib:/mnt/c/Scoop/apps/fiddler/5.0.20244.10953:/mnt/c/Users/64433/AppData/Local/Muse Hub/lib:/snap/bin:/home/coffee/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-615d85cdac.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PROMPT_COMMAND', '__vsc_prompt_cmd_original'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/coffee/rv_autokal/src/build/auto_aim_interfaces'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('VTE_VERSION', '0'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[9.726377] (-) TimerEvent: {}
+[9.742221] (auto_aim_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[9.746964] (auto_aim_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[9.750272] (auto_aim_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_auto_aim_interfaces\n'}
+[9.826510] (-) TimerEvent: {}
+[9.902175] (auto_aim_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[9.902611] (auto_aim_interfaces) StdoutLine: {'line': b'creating auto_aim_interfaces.egg-info\n'}
+[9.902949] (auto_aim_interfaces) StdoutLine: {'line': b'writing auto_aim_interfaces.egg-info/PKG-INFO\n'}
+[9.903168] (auto_aim_interfaces) StdoutLine: {'line': b'writing dependency_links to auto_aim_interfaces.egg-info/dependency_links.txt\n'}
+[9.903217] (auto_aim_interfaces) StdoutLine: {'line': b'writing top-level names to auto_aim_interfaces.egg-info/top_level.txt\n'}
+[9.903251] (auto_aim_interfaces) StdoutLine: {'line': b"writing manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'\n"}
+[9.905392] (auto_aim_interfaces) StdoutLine: {'line': b"reading manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'\n"}
+[9.905623] (auto_aim_interfaces) StdoutLine: {'line': b"writing manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'\n"}
+[9.921024] (auto_aim_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_auto_aim_interfaces_egg\n'}
+[9.926577] (-) TimerEvent: {}
+[10.026848] (-) TimerEvent: {}
+[10.127335] (-) TimerEvent: {}
+[10.175519] (auto_aim_interfaces) StdoutLine: {'line': b'[  2%] Built target auto_aim_interfaces__cpp\n'}
+[10.182225] (auto_aim_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[10.182555] (auto_aim_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.184584] (auto_aim_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.197829] (auto_aim_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/armors__functions.c.o\x1b[0m\n'}
+[10.198007] (auto_aim_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/debug_light__functions.c.o\x1b[0m\n'}
+[10.198242] (auto_aim_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/target__functions.c.o\x1b[0m\n'}
+[10.198752] (auto_aim_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/debug_armors__functions.c.o\x1b[0m\n'}
+[10.199158] (auto_aim_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/armor__functions.c.o\x1b[0m\n'}
+[10.199581] (auto_aim_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/tracker_info__functions.c.o\x1b[0m\n'}
+[10.199771] (auto_aim_interfaces) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/debug_lights__functions.c.o\x1b[0m\n'}
+[10.200388] (auto_aim_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/debug_armor__functions.c.o\x1b[0m\n'}
+[10.227301] (-) TimerEvent: {}
+[10.254729] (auto_aim_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking C shared library libauto_aim_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[10.327401] (-) TimerEvent: {}
+[10.427728] (-) TimerEvent: {}
+[10.455421] (auto_aim_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/armor__type_support.cpp.o\x1b[0m\n'}
+[10.455649] (auto_aim_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/armors__type_support.cpp.o\x1b[0m\n'}
+[10.455979] (auto_aim_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/target__type_support.cpp.o\x1b[0m\n'}
+[10.456802] (auto_aim_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/debug_lights__type_support.cpp.o\x1b[0m\n'}
+[10.457193] (auto_aim_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/tracker_info__type_support.cpp.o\x1b[0m\n'}
+[10.458007] (auto_aim_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/debug_armors__type_support.cpp.o\x1b[0m\n'}
+[10.458289] (auto_aim_interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/debug_light__type_support.cpp.o\x1b[0m\n'}
+[10.460757] (auto_aim_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/debug_armor__type_support.cpp.o\x1b[0m\n'}
+[10.527908] (-) TimerEvent: {}
+[10.535149] (auto_aim_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/tracker_info__type_support.cpp.o\x1b[0m\n'}
+[10.535460] (auto_aim_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/target__type_support.cpp.o\x1b[0m\n'}
+[10.535555] (auto_aim_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/debug_lights__type_support.cpp.o\x1b[0m\n'}
+[10.535636] (auto_aim_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/debug_light__type_support.cpp.o\x1b[0m\n'}
+[10.535715] (auto_aim_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/armor__type_support.cpp.o\x1b[0m\n'}
+[10.535914] (auto_aim_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/debug_armors__type_support.cpp.o\x1b[0m\n'}
+[10.536000] (auto_aim_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/armors__type_support.cpp.o\x1b[0m\n'}
+[10.536272] (auto_aim_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/debug_armor__type_support.cpp.o\x1b[0m\n'}
+[10.591457] (auto_aim_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/target__type_support.cpp.o\x1b[0m\n'}
+[10.592174] (auto_aim_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/debug_armor__type_support.cpp.o\x1b[0m\n'}
+[10.592433] (auto_aim_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/debug_light__type_support.cpp.o\x1b[0m\n'}
+[10.592524] (auto_aim_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/armor__type_support.cpp.o\x1b[0m\n'}
+[10.592781] (auto_aim_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/armors__type_support.cpp.o\x1b[0m\n'}
+[10.593119] (auto_aim_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/debug_lights__type_support.cpp.o\x1b[0m\n'}
+[10.593494] (auto_aim_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/debug_armors__type_support.cpp.o\x1b[0m\n'}
+[10.593660] (auto_aim_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/tracker_info__type_support.cpp.o\x1b[0m\n'}
+[10.628050] (-) TimerEvent: {}
+[10.650924] (auto_aim_interfaces) StdoutLine: {'line': b'[ 43%] Built target auto_aim_interfaces__rosidl_generator_c\n'}
+[10.659719] (auto_aim_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.660560] (auto_aim_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[10.660855] (auto_aim_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.728179] (-) TimerEvent: {}
+[10.755031] (auto_aim_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.828531] (-) TimerEvent: {}
+[10.928908] (-) TimerEvent: {}
+[10.973927] (auto_aim_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[10.987216] (auto_aim_interfaces) StdoutLine: {'line': b'[ 49%] Built target auto_aim_interfaces__rosidl_typesupport_cpp\n'}
+[11.015739] (auto_aim_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[11.028994] (-) TimerEvent: {}
+[11.047929] (auto_aim_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/armors__type_support.cpp.o\x1b[0m\n'}
+[11.048455] (auto_aim_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/debug_armors__type_support.cpp.o\x1b[0m\n'}
+[11.048819] (auto_aim_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/debug_armor__type_support.cpp.o\x1b[0m\n'}
+[11.049151] (auto_aim_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/target__type_support.cpp.o\x1b[0m\n'}
+[11.049637] (auto_aim_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/armor__type_support.cpp.o\x1b[0m\n'}
+[11.049769] (auto_aim_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/debug_lights__type_support.cpp.o\x1b[0m\n'}
+[11.050002] (auto_aim_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/debug_light__type_support.cpp.o\x1b[0m\n'}
+[11.055111] (auto_aim_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/tracker_info__type_support.cpp.o\x1b[0m\n'}
+[11.071760] (auto_aim_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[11.127404] (auto_aim_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/armor__type_support.c.o\x1b[0m\n'}
+[11.127638] (auto_aim_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/debug_light__type_support.c.o\x1b[0m\n'}
+[11.127932] (auto_aim_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/debug_armor__type_support.c.o\x1b[0m\n'}
+[11.128113] (auto_aim_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/debug_armors__type_support.c.o\x1b[0m\n'}
+[11.129092] (-) TimerEvent: {}
+[11.129498] (auto_aim_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/target__type_support.c.o\x1b[0m\n'}
+[11.129700] (auto_aim_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/armors__type_support.c.o\x1b[0m\n'}
+[11.129839] (auto_aim_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/tracker_info__type_support.c.o\x1b[0m\n'}
+[11.130529] (auto_aim_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/debug_lights__type_support.c.o\x1b[0m\n'}
+[11.155193] (auto_aim_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking C shared library libauto_aim_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[11.175858] (auto_aim_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/debug_lights__type_support_c.cpp.o\x1b[0m\n'}
+[11.176130] (auto_aim_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/target__type_support_c.cpp.o\x1b[0m\n'}
+[11.176286] (auto_aim_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/debug_light__type_support_c.cpp.o\x1b[0m\n'}
+[11.176366] (auto_aim_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/debug_armor__type_support_c.cpp.o\x1b[0m\n'}
+[11.176919] (auto_aim_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/debug_armors__type_support_c.cpp.o\x1b[0m\n'}
+[11.177025] (auto_aim_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/armors__type_support_c.cpp.o\x1b[0m\n'}
+[11.177065] (auto_aim_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/armor__type_support_c.cpp.o\x1b[0m\n'}
+[11.177667] (auto_aim_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/tracker_info__type_support_c.cpp.o\x1b[0m\n'}
+[11.229214] (-) TimerEvent: {}
+[11.329530] (-) TimerEvent: {}
+[11.360212] (auto_aim_interfaces) StdoutLine: {'line': b'[ 80%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[11.402320] (auto_aim_interfaces) StdoutLine: {'line': b'[ 80%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[11.402866] (auto_aim_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[11.429633] (-) TimerEvent: {}
+[11.450437] (auto_aim_interfaces) StdoutLine: {'line': b'[ 81%] Built target auto_aim_interfaces__rosidl_typesupport_c\n'}
+[11.529745] (-) TimerEvent: {}
+[11.537838] (auto_aim_interfaces) StdoutLine: {'line': b'[ 81%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_c\n'}
+[11.630053] (-) TimerEvent: {}
+[11.730493] (-) TimerEvent: {}
+[11.830928] (-) TimerEvent: {}
+[11.931199] (-) TimerEvent: {}
+[12.031459] (-) TimerEvent: {}
+[12.045460] (auto_aim_interfaces) StdoutLine: {'line': b'[ 81%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[12.055485] (auto_aim_interfaces) StdoutLine: {'line': b'[ 81%] Built target auto_aim_interfaces\n'}
+[12.065910] (auto_aim_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.131588] (-) TimerEvent: {}
+[12.231898] (-) TimerEvent: {}
+[12.332276] (-) TimerEvent: {}
+[12.432653] (-) TimerEvent: {}
+[12.532897] (-) TimerEvent: {}
+[12.633165] (-) TimerEvent: {}
+[12.733441] (-) TimerEvent: {}
+[12.734731] (auto_aim_interfaces) StdoutLine: {'line': b'[ 82%] Built target auto_aim_interfaces__py\n'}
+[12.744099] (auto_aim_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_armors_s.c.o\x1b[0m\n'}
+[12.744348] (auto_aim_interfaces) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_armor_s.c.o\x1b[0m\n'}
+[12.744554] (auto_aim_interfaces) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_target_s.c.o\x1b[0m\n'}
+[12.744626] (auto_aim_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_debug_light_s.c.o\x1b[0m\n'}
+[12.745363] (auto_aim_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_debug_armor_s.c.o\x1b[0m\n'}
+[12.745617] (auto_aim_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_debug_lights_s.c.o\x1b[0m\n'}
+[12.747933] (auto_aim_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_debug_armors_s.c.o\x1b[0m\n'}
+[12.748072] (auto_aim_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_tracker_info_s.c.o\x1b[0m\n'}
+[12.833601] (-) TimerEvent: {}
+[12.846653] (auto_aim_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/auto_aim_interfaces/libauto_aim_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[12.933719] (-) TimerEvent: {}
+[13.033964] (-) TimerEvent: {}
+[13.133488] (auto_aim_interfaces) StdoutLine: {'line': b'[ 93%] Built target auto_aim_interfaces__rosidl_generator_py\n'}
+[13.134118] (-) TimerEvent: {}
+[13.142615] (auto_aim_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[13.142757] (auto_aim_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[13.143201] (auto_aim_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[13.205798] (auto_aim_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[13.206047] (auto_aim_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[13.206509] (auto_aim_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[13.234224] (-) TimerEvent: {}
+[13.334471] (-) TimerEvent: {}
+[13.434744] (-) TimerEvent: {}
+[13.457971] (auto_aim_interfaces) StdoutLine: {'line': b'[100%] Built target auto_aim_interfaces__rosidl_typesupport_c__pyext\n'}
+[13.458126] (auto_aim_interfaces) StdoutLine: {'line': b'[100%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[13.458168] (auto_aim_interfaces) StdoutLine: {'line': b'[100%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[13.464484] (auto_aim_interfaces) CommandEnded: {'returncode': 0}
+[13.465206] (auto_aim_interfaces) JobProgress: {'identifier': 'auto_aim_interfaces', 'progress': 'install'}
+[13.469304] (auto_aim_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/coffee/rv_autokal/src/build/auto_aim_interfaces'], 'cwd': '/home/coffee/rv_autokal/src/build/auto_aim_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('no_proxy', '192.168.*,172.31.*,172.30.*,172.29.*,172.28.*,172.27.*,172.26.*,172.25.*,172.24.*,172.23.*,172.22.*,172.21.*,172.20.*,172.19.*,172.18.*,172.17.*,172.16.*,10.*,127.*,localhost,<local>'), ('USER', 'coffee'), ('GIT_ASKPASS', '/home/coffee/.vscode-server/bin/cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/coffee'), ('OLDPWD', '/home/coffee/rv_autokal/src'), ('TERM_PROGRAM_VERSION', '1.96.4'), ('NO_PROXY', '192.168.*,172.31.*,172.30.*,172.29.*,172.28.*,172.27.*,172.26.*,172.25.*,172.24.*,172.23.*,172.22.*,172.21.*,172.20.*,172.19.*,172.18.*,172.17.*,172.16.*,10.*,127.*,localhost,<local>'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c7b93569-9867-4b52-9966-9315f49778dd.sock'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'cat'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/coffee/.vscode-server/bin/cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/coffee/.vscode-server/bin/cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'coffee'), ('NAME', 'coffee'), ('WSL_INTEROP', '/run/WSL/1791_interop'), ('http_proxy', 'http://127.0.0.1:7890'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/coffee/.vscode-server/bin/cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/MVS/Runtime/Win32_i86:/mnt/c/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/d/Bandizip/:/mnt/d/calibre/:/mnt/d/Scoop/apps/nodejs/22.6.0:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility:/mnt/d/matlab/bin:/mnt/d/serialplot/bin:/mnt/c/Users/64433/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/d/scoop/apps/openjdk/current/bin:/mnt/d/scoop/apps/vscode/current/bin:/mnt/c/Users/64433/.local/bin:/mnt/d/scoop/apps/python39/current/Scripts:/mnt/d/scoop/apps/python39/current:/mnt/d/scoop/apps/python27/current/Scripts:/mnt/d/scoop/apps/python27/current:/mnt/d/scoop/apps/nodejs/current/bin:/mnt/d/scoop/apps/nodejs/current:/mnt/d/scoop/apps/mingw/current/bin:/mnt/d/scoop/apps/latex/current/texmfs/install/miktex/bin/x64:/mnt/d/scoop/apps/gcc/current/bin:/mnt/d/scoop/apps/anaconda3/current/App/Scripts:/mnt/c/Users/64433/go/bin:/mnt/d/Scoop/shims:/mnt/c/Users/64433/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/64433/AppData/Local/Muse Hub/lib:/mnt/d/platform-tools-latest-windows/platform-tools:/mnt/d/Scoop/apps/hexo-client/current/HexoClient.exe:/mnt/d/Scoop/apps/nodejs/22.6.0/bin:/mnt/d/Scoop/apps/emax64-pdumper/20180619/bin/emacs.exe:/mnt/d/Scoop/apps/fiddler/5.0.20244.10953:/mnt/c/Users/64433/AppData/Local/Muse Hub/lib:/mnt/c/Scoop/apps/fiddler/5.0.20244.10953:/mnt/c/Users/64433/AppData/Local/Muse Hub/lib:/snap/bin:/home/coffee/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-615d85cdac.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PROMPT_COMMAND', '__vsc_prompt_cmd_original'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/coffee/rv_autokal/src/build/auto_aim_interfaces'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('VTE_VERSION', '0'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[13.473083] (auto_aim_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.473472] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/ament_index/resource_index/rosidl_interfaces/auto_aim_interfaces\n'}
+[13.473611] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[13.473683] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[13.473732] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armor.h\n'}
+[13.473818] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_lights.h\n'}
+[13.473901] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[13.474270] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__type_support.h\n'}
+[13.474352] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__type_support.h\n'}
+[13.474390] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__type_support.h\n'}
+[13.474423] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__struct.h\n'}
+[13.474491] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__functions.c\n'}
+[13.474530] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__struct.h\n'}
+[13.474590] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__functions.h\n'}
+[13.474674] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__struct.h\n'}
+[13.474866] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__functions.h\n'}
+[13.474950] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__functions.c\n'}
+[13.475038] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__type_support.h\n'}
+[13.475088] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__struct.h\n'}
+[13.475127] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__struct.h\n'}
+[13.475456] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__functions.c\n'}
+[13.475503] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__type_support.h\n'}
+[13.475626] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__functions.h\n'}
+[13.475695] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__functions.h\n'}
+[13.475732] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__struct.h\n'}
+[13.475766] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__struct.h\n'}
+[13.475827] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__functions.c\n'}
+[13.475868] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__functions.c\n'}
+[13.475927] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__functions.h\n'}
+[13.475965] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__functions.h\n'}
+[13.475998] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__functions.c\n'}
+[13.476178] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__functions.c\n'}
+[13.476244] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__type_support.h\n'}
+[13.476298] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__struct.h\n'}
+[13.476501] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__functions.c\n'}
+[13.476552] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__type_support.h\n'}
+[13.476585] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__functions.h\n'}
+[13.476802] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__functions.h\n'}
+[13.476869] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.h\n'}
+[13.476904] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_light.h\n'}
+[13.476963] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[13.477003] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/target.h\n'}
+[13.477035] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armors.h\n'}
+[13.477179] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armors.h\n'}
+[13.477225] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armor.h\n'}
+[13.477259] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/tracker_info.h\n'}
+[13.477296] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/library_path.sh\n'}
+[13.477366] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/library_path.dsv\n'}
+[13.477449] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_c.so\n'}
+[13.477533] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_c.so" to ""\n'}
+[13.477616] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[13.477699] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[13.477785] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[13.477822] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[13.477894] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_c.h\n'}
+[13.477977] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_fastrtps_c.h\n'}
+[13.478028] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_fastrtps_c.h\n'}
+[13.478126] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_fastrtps_c.h\n'}
+[13.478209] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_fastrtps_c.h\n'}
+[13.478261] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_fastrtps_c.h\n'}
+[13.478295] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_fastrtps_c.h\n'}
+[13.478399] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_fastrtps_c.h\n'}
+[13.478465] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[13.478502] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[13.478546] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[13.478601] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[13.478831] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[13.479061] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_introspection_c.h\n'}
+[13.479115] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__type_support.c\n'}
+[13.479149] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_introspection_c.h\n'}
+[13.479181] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_introspection_c.h\n'}
+[13.479213] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_introspection_c.h\n'}
+[13.479288] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__type_support.c\n'}
+[13.479345] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__type_support.c\n'}
+[13.479379] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_introspection_c.h\n'}
+[13.479449] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__type_support.c\n'}
+[13.479513] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_introspection_c.h\n'}
+[13.479550] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__type_support.c\n'}
+[13.479585] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__type_support.c\n'}
+[13.479630] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.c\n'}
+[13.479680] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_introspection_c.h\n'}
+[13.479714] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__type_support.c\n'}
+[13.480232] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_introspection_c.h\n'}
+[13.480280] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[13.480402] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[13.480440] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[13.480472] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_c.so\n'}
+[13.480503] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[13.480534] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[13.480592] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[13.480657] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/target.hpp\n'}
+[13.480694] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_light.hpp\n'}
+[13.480815] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[13.480851] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__builder.hpp\n'}
+[13.480883] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__type_support.hpp\n'}
+[13.480965] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__traits.hpp\n'}
+[13.481005] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__struct.hpp\n'}
+[13.481039] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__type_support.hpp\n'}
+[13.481154] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__struct.hpp\n'}
+[13.481194] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__struct.hpp\n'}
+[13.481234] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__struct.hpp\n'}
+[13.481306] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__traits.hpp\n'}
+[13.481390] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__struct.hpp\n'}
+[13.481474] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__builder.hpp\n'}
+[13.481559] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__traits.hpp\n'}
+[13.481642] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__traits.hpp\n'}
+[13.481725] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__builder.hpp\n'}
+[13.481808] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__builder.hpp\n'}
+[13.481891] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__struct.hpp\n'}
+[13.481974] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__type_support.hpp\n'}
+[13.482057] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__type_support.hpp\n'}
+[13.482140] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.hpp\n'}
+[13.482222] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__builder.hpp\n'}
+[13.482305] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__struct.hpp\n'}
+[13.482388] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__traits.hpp\n'}
+[13.482472] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__struct.hpp\n'}
+[13.482555] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__traits.hpp\n'}
+[13.482638] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__traits.hpp\n'}
+[13.482721] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__type_support.hpp\n'}
+[13.482804] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__builder.hpp\n'}
+[13.482887] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__builder.hpp\n'}
+[13.482970] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__builder.hpp\n'}
+[13.483053] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__traits.hpp\n'}
+[13.483286] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__type_support.hpp\n'}
+[13.483326] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__type_support.hpp\n'}
+[13.483416] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armor.hpp\n'}
+[13.483466] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armors.hpp\n'}
+[13.483504] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_lights.hpp\n'}
+[13.483536] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armor.hpp\n'}
+[13.483619] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[13.483695] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/tracker_info.hpp\n'}
+[13.483779] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armors.hpp\n'}
+[13.483861] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[13.483944] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[13.483984] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[13.484035] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[13.484069] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.484334] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.484432] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/dds_fastrtps\n'}
+[13.484515] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.484598] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.484681] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.484868] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.484907] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.484939] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.484969] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[13.484999] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[13.485028] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces\n'}
+[13.485057] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg\n'}
+[13.485086] (auto_aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail\n'}
+[13.485114] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.485143] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.485179] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__type_support.cpp\n'}
+[13.485210] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__type_support.cpp\n'}
+[13.485241] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.485270] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.485298] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__type_support.cpp\n'}
+[13.485326] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.485354] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.485382] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__type_support.cpp\n'}
+[13.485412] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.485441] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__type_support.cpp\n'}
+[13.485469] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.cpp\n'}
+[13.485497] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__type_support.cpp\n'}
+[13.485525] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.485553] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__type_support.cpp\n'}
+[13.485581] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[13.485609] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[13.485637] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_cpp.so\n'}
+[13.485665] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[13.485693] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/pythonpath.sh\n'}
+[13.485721] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/pythonpath.dsv\n'}
+[13.485749] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info\n'}
+[13.485777] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[13.485805] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[13.485833] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[13.485860] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[13.485888] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces\n'}
+[13.485917] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[13.485949] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.485978] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/__init__.py\n'}
+[13.486006] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[13.486035] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.486063] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.486092] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/libauto_aim_interfaces__rosidl_generator_py.so\n'}
+[13.486120] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[13.486148] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg\n'}
+[13.486175] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armor_s.c\n'}
+[13.486203] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armors_s.c\n'}
+[13.486231] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armors_s.c\n'}
+[13.486259] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_light.py\n'}
+[13.486287] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armor.py\n'}
+[13.486315] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armor_s.c\n'}
+[13.486343] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_lights.py\n'}
+[13.486372] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target_s.c\n'}
+[13.486400] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armors.py\n'}
+[13.486429] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/__init__.py\n'}
+[13.486456] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target.py\n'}
+[13.486485] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armor.py\n'}
+[13.486513] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_light_s.c\n'}
+[13.486541] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_lights_s.c\n'}
+[13.486569] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_tracker_info.py\n'}
+[13.486598] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_tracker_info_s.c\n'}
+[13.486626] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armors.py\n'}
+[13.509682] (auto_aim_interfaces) StdoutLine: {'line': b"Listing '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces'...\n"}
+[13.510017] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/__init__.py'...\n"}
+[13.510093] (auto_aim_interfaces) StdoutLine: {'line': b"Listing '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg'...\n"}
+[13.510126] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/__init__.py'...\n"}
+[13.510158] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armor.py'...\n"}
+[13.510188] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armors.py'...\n"}
+[13.510217] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armor.py'...\n"}
+[13.510247] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armors.py'...\n"}
+[13.510276] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_light.py'...\n"}
+[13.510305] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_lights.py'...\n"}
+[13.510334] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target.py'...\n"}
+[13.510363] (auto_aim_interfaces) StdoutLine: {'line': b"Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_tracker_info.py'...\n"}
+[13.512746] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.512909] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.513080] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.513282] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.513412] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.513448] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.513479] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_py.so\n'}
+[13.513675] (auto_aim_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_py.so" to ""\n'}
+[13.513746] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armor.idl\n'}
+[13.513969] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armors.idl\n'}
+[13.514018] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Target.idl\n'}
+[13.514055] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLight.idl\n'}
+[13.514085] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLights.idl\n'}
+[13.514116] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmor.idl\n'}
+[13.514146] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmors.idl\n'}
+[13.514294] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/TrackerInfo.idl\n'}
+[13.514403] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armor.msg\n'}
+[13.514443] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armors.msg\n'}
+[13.514625] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Target.msg\n'}
+[13.514712] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLight.msg\n'}
+[13.514795] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLights.msg\n'}
+[13.514877] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmor.msg\n'}
+[13.514941] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmors.msg\n'}
+[13.514976] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/TrackerInfo.msg\n'}
+[13.515115] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/ament_index/resource_index/package_run_dependencies/auto_aim_interfaces\n'}
+[13.515157] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/ament_index/resource_index/parent_prefix_path/auto_aim_interfaces\n'}
+[13.515230] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/ament_prefix_path.sh\n'}
+[13.515270] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/ament_prefix_path.dsv\n'}
+[13.515301] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/path.sh\n'}
+[13.515333] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/path.dsv\n'}
+[13.515445] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.bash\n'}
+[13.515484] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.sh\n'}
+[13.515515] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.zsh\n'}
+[13.515545] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.dsv\n'}
+[13.515628] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/package.dsv\n'}
+[13.515711] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/ament_index/resource_index/packages/auto_aim_interfaces\n'}
+[13.515828] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cExport.cmake\n'}
+[13.515928] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[13.516011] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.516166] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[13.516215] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.516251] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[13.516283] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[13.516349] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[13.516384] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cppExport.cmake\n'}
+[13.516416] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.516486] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[13.516686] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.516805] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[13.516879] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[13.516916] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[13.516949] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_pyExport.cmake\n'}
+[13.517006] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[13.517097] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[13.517196] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.517468] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.517530] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.517564] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.517595] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[13.517625] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[13.517655] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfacesConfig.cmake\n'}
+[13.517687] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfacesConfig-version.cmake\n'}
+[13.517716] (auto_aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/package.xml\n'}
+[13.518398] (auto_aim_interfaces) CommandEnded: {'returncode': 0}
+[13.531241] (auto_aim_interfaces) JobEnded: {'identifier': 'auto_aim_interfaces', 'rc': 0}
+[13.531836] (-) EventReactorShutdown: {}

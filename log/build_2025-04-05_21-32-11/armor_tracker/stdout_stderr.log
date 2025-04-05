@@ -1,0 +1,64 @@
+[35m[1mConsolidate compiler generated dependencies of target armor_tracker[0m
+[ 33%] Built target armor_tracker_node
+[ 50%] [32mBuilding CXX object CMakeFiles/armor_tracker.dir/src/tracker_node.cpp.o[0m
+[01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:[m[K In member function ‘[01m[Kdouble rm_auto_aim::ArmorTrackerNode::predictYawByLeastSquare(const rclcpp::Time&)[m[K’:
+[01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:199:62:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kseconds[m[K’ in ‘[01m[K(((type)time) - ((rm_auto_aim::ArmorTrackerNode*)this)->rm_auto_aim::ArmorTrackerNode::tracker_.std::unique_ptr<rm_auto_aim::Tracker>::operator->()->rm_auto_aim::Tracker::yaw_history_.std::deque<std::pair<double, double> >::front().std::pair<double, double>::first)[m[K’, which is of non-class type ‘[01m[Ktype[m[K’ {aka ‘[01m[Kdouble[m[K’}
+  199 |     double x = (time - tracker_->yaw_history_.front().first).[01;31m[Kseconds[m[K();
+      |                                                              [01;31m[K^~~~~~~[m[K
+[01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:213:36:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[Kconst rclcpp::Time[m[K’ and ‘[01m[Kdouble[m[K’)
+  213 |   double current_x = ([32m[Kcurrent_time[m[K [01;31m[K-[m[K [34m[Ktracker_->yaw_history_.front().first[m[K).seconds();
+      |                       [32m[K~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                       [32m[K|[m[K                                             [34m[K|[m[K
+      |                       [32m[Kconst rclcpp::Time[m[K                            [34m[Kdouble[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:27[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:30[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:40[m[K,
+                 from [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/include/armor_tracker/tracker_node.hpp:7[m[K,
+                 from [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:155:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Duration rclcpp::Time::operator-(const rclcpp::Time&) const[m[K’
+  155 |   [01;36m[Koperator[m[K-(const rclcpp::Time & rhs) const;
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:155:34:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kconst rclcpp::Time&[m[K’
+  155 |   operator-([01;36m[Kconst rclcpp::Time & rhs[m[K) const;
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:162:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Time rclcpp::Time::operator-(const rclcpp::Duration&) const[m[K’
+  162 |   [01;36m[Koperator[m[K-(const rclcpp::Duration & rhs) const;
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:162:38:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kconst rclcpp::Duration&[m[K’
+  162 |   operator-([01;36m[Kconst rclcpp::Duration & rhs[m[K) const;
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::ArmorTrackerNode::armorsCallback(auto_aim_interfaces::msg::Armors_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:266:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rm_auto_aim::Tracker[m[K’ has no member named ‘[01m[KgetTargetMsg[m[K’
+  266 |     target_msg = tracker_->[01;31m[KgetTargetMsg[m[K();
+      |                            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:270:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::deque<std::pair<double, double> >::push_back(<brace-enclosed initializer list>)[m[K’
+  270 |     [01;31m[Ktracker_->yaw_history_.push_back({current_time, current_yaw})[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/deque:67[m[K,
+                 from [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/include/armor_tracker/tracker.hpp:17[m[K,
+                 from [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/include/armor_tracker/tracker_node.hpp:23[m[K,
+                 from [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:2[m[K:
+[01m[K/usr/include/c++/11/bits/stl_deque.h:1496:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::pair<double, double>; _Alloc = std::allocator<std::pair<double, double> >; std::deque<_Tp, _Alloc>::value_type = std::pair<double, double>][m[K’
+ 1496 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_deque.h:1496:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst std::pair<double, double>&[m[K’}
+ 1496 |       push_back([01;36m[Kconst value_type& __x[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_deque.h:1511:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::deque<_Tp, _Alloc>::push_back(std::deque<_Tp, _Alloc>::value_type&&) [with _Tp = std::pair<double, double>; _Alloc = std::allocator<std::pair<double, double> >; std::deque<_Tp, _Alloc>::value_type = std::pair<double, double>][m[K’
+ 1511 |       [01;36m[Kpush_back[m[K(value_type&& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_deque.h:1511:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::deque<std::pair<double, double> >::value_type&&[m[K’ {aka ‘[01m[Kstd::pair<double, double>&&[m[K’}
+ 1511 |       push_back([01;36m[Kvalue_type&& __x[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/armor_tracker.dir/build.make:104: CMakeFiles/armor_tracker.dir/src/tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/armor_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

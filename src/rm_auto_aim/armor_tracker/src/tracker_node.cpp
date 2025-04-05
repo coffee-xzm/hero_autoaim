@@ -1,10 +1,6 @@
 // Copyright 2022 Chen Jun
 #include "armor_tracker/tracker_node.hpp"
 
-// Member variables to add in class declaration:
-// double original_s2qyaw_;
-// bool adaptive_yaw_tuning_;
-// double yaw_error_threshold_;
 // STD
 #include <memory>
 #include <vector>
@@ -19,17 +15,15 @@ ArmorTrackerNode::ArmorTrackerNode(const rclcpp::NodeOptions & options)
   // Maximum allowable armor distance in the XOY plane
   max_armor_distance_ = this->declare_parameter("max_armor_distance", 10.0);
 
+  vyaw_fix = this->declare_parameter("vyaw_fix", false);
+  vyaw_err_thershold = this->declare_parameter("vyaw_err_thershold", 0.1);
+
   // Tracker
   double max_match_distance = this->declare_parameter("tracker.max_match_distance", 0.15);
   double max_match_yaw_diff = this->declare_parameter("tracker.max_match_yaw_diff", 1.0);
   tracker_ = std::make_unique<Tracker>(max_match_distance, max_match_yaw_diff);
   tracker_->tracking_thres = this->declare_parameter("tracker.tracking_thres", 5);
   lost_time_thres_ = this->declare_parameter("tracker.lost_time_thres", 0.3);
-  
-  // Adaptive yaw tuning parameters
-  tracker_->setAdaptiveYawTuning(this->declare_parameter("ekf.adaptive_yaw_tuning", false));
-  tracker_->setYawErrorThreshold(this->declare_parameter("ekf.yaw_error_threshold", 0.5));
-  tracker_->setOriginalS2QYaw(this->declare_parameter("ekf.sigma2_q_yaw", 5.0));
 
   // EKF
   // xa = x_armor, xc = x_robot_center
@@ -85,13 +79,8 @@ ArmorTrackerNode::ArmorTrackerNode(const rclcpp::NodeOptions & options)
   };
   // update_Q - process noise covariance matrix
   s2qxyz_ = declare_parameter("ekf.sigma2_q_xyz", 20.0);
-  original_s2qyaw_ = declare_parameter("ekf.sigma2_q_yaw", 100.0);
-  s2qyaw_ = original_s2qyaw_;
+  s2qyaw_ = declare_parameter("ekf.sigma2_q_yaw", 100.0);
   s2qr_ = declare_parameter("ekf.sigma2_q_r", 800.0);
-  
-  // Adaptive yaw tuning parameters
-  adaptive_yaw_tuning_ = declare_parameter("ekf.adaptive_yaw_tuning", true);
-  yaw_error_threshold_ = declare_parameter("ekf.yaw_error_threshold", 0.5);
   auto u_q = [this]() {
     Eigen::MatrixXd q(9, 9);
     double t = dt_, x = s2qxyz_, y = s2qyaw_, r = s2qr_;
@@ -195,6 +184,36 @@ ArmorTrackerNode::ArmorTrackerNode(const rclcpp::NodeOptions & options)
   marker_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("/tracker/marker", 10);
 }
 
+double ArmorTrackerNode::predictYawByLeastSquare(const rclcpp::Time& current_time)
+{
+  if (tracker_->yaw_history_.size() < 3) {
+    return tracker_->yaw_history_.back().second; // 历史数据不足，返回最新的yaw
+  }
+  
+  // 最小二乘法拟合 y = ax + b
+  double sum_x = 0, sum_y = 0, sum_xx = 0, sum_xy = 0;
+  double n = tracker_->yaw_history_.size();
+  
+  for (const auto& [time, yaw] : tracker_->yaw_history_) {
+    // 时间已经是秒数，直接使用差值
+    double x = time - tracker_->yaw_history_.front().first;
+    double y = yaw;
+    
+    sum_x += x;
+    sum_y += y;
+    sum_xx += x * x;
+    sum_xy += x * y;
+  }
+  
+  // 计算拟合参数
+  double a = (n * sum_xy - sum_x * sum_y) / (n * sum_xx - sum_x * sum_x);
+  double b = (sum_y - a * sum_x) / n;
+  
+  // 计算当前时间点的预测值
+  double current_x = current_time.seconds() - tracker_->yaw_history_.front().first;
+  return a * current_x + b;
+}
+
 void ArmorTrackerNode::armorsCallback(const auto_aim_interfaces::msg::Armors::SharedPtr armors_msg)
 {
   // Tranform armor position from image frame to world coordinate
@@ -229,13 +248,54 @@ void ArmorTrackerNode::armorsCallback(const auto_aim_interfaces::msg::Armors::Sh
   target_msg.header.frame_id = target_frame_;
 
   // Update tracker
-  if (tracker_->tracker_state == Tracker::LOST) {
+  if (tracker_->tracker_state == Tracker::LOST) 
+  {
     tracker_->init(armors_msg);
     target_msg.tracking = false;
-  } else {
+  } 
+  else 
+  {
     dt_ = (time - last_time_).seconds();
     tracker_->lost_thres = static_cast<int>(lost_time_thres_ / dt_);
     tracker_->update(armors_msg);
+
+    //add_yaw_fix
+    if (tracker_->tracker_state == Tracker::TRACKING && vyaw_fix) 
+    {
+    // 手动填充target_msg
+    const auto & state = tracker_->target_state;
+    target_msg.id = tracker_->tracked_id;
+    target_msg.armors_num = static_cast<int>(tracker_->tracked_armors_num);
+    target_msg.position.x = state(0);
+    target_msg.velocity.x = state(1);
+    target_msg.position.y = state(2);
+    target_msg.velocity.y = state(3);
+    target_msg.position.z = state(4);
+    target_msg.velocity.z = state(5);
+    target_msg.yaw = state(6);
+    target_msg.v_yaw = state(7);
+    target_msg.radius_1 = state(8);
+    target_msg.radius_2 = tracker_->another_r;
+    target_msg.dz = tracker_->dz;
+    
+    // 记录当前yaw值和时间
+    double current_yaw = target_msg.yaw;
+    rclcpp::Time current_time = this->now();
+    tracker_->yaw_history_.push_back(std::make_pair(current_time.seconds(), current_yaw));
+    
+    // 检查yaw_diff是否超过阈值
+    if (tracker_->info_yaw_diff > vyaw_err_thershold && !tracker_->yaw_history_.empty()) {
+      // 使用最小二乘法预测
+      double predicted_yaw = predictYawByLeastSquare(current_time);
+      
+      // 更新目标消息
+      target_msg.yaw = predicted_yaw;
+      
+      RCLCPP_INFO(
+        this->get_logger(), 
+        "Yaw差异过大 (%.3f > %.3f), 使用最小二乘法预测: %.3f -> %.3f", 
+        tracker_->info_yaw_diff, vyaw_err_thershold, current_yaw, predicted_yaw);
+    }
 
     // Publish Info
     info_msg.position_diff = tracker_->info_position_diff;
@@ -262,11 +322,13 @@ void ArmorTrackerNode::armorsCallback(const auto_aim_interfaces::msg::Armors::Sh
       target_msg.velocity.y = state(3);
       target_msg.position.z = state(4);
       target_msg.velocity.z = state(5);
-      target_msg.yaw = state(6);
+      if(target_msg.yaw == state(6)){}
+      else {}
       target_msg.v_yaw = state(7);
       target_msg.radius_1 = state(8);
       target_msg.radius_2 = tracker_->another_r;
       target_msg.dz = tracker_->dz;
+    }
     }
   }
 

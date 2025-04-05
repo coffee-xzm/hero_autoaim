@@ -39,9 +39,8 @@
       r_xyz_factor: 4e-4
       r_yaw: 5e-3
 
-      # Adaptive yaw tuning
-      adaptive_yaw_tuning: true  # Enable/disable adaptive yaw parameter tuning
-      yaw_error_threshold: 0.5   # Threshold (rad) for triggering parameter adjustment
+      vyaw_fix: true
+      vyaw_err_thershold: 0.1
 
     tracker:
       max_match_distance: 0.5

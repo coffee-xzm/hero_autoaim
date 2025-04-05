@@ -19,8 +19,6 @@ ExtendedKalmanFilter::ExtendedKalmanFilter(
   x_pri(n),
   x_post(n)
 {
-  // Initialize dt_ to 0.01s (10ms) as default
-  dt_ = 0.01;
 }
 
 void ExtendedKalmanFilter::setState(const Eigen::VectorXd & x0) { x_post = x0; }
@@ -48,15 +46,6 @@ Eigen::MatrixXd ExtendedKalmanFilter::update(const Eigen::VectorXd & z)
   P_post = (I - K * H) * P_pri;
 
   return x_post;
-}
-
-void ExtendedKalmanFilter::setSigma2QYaw(double sigma2_q_yaw)
-{
-  // Update yaw related parameters in Q matrix
-  Q(6,6) = sigma2_q_yaw * pow(dt_, 4) / 4;  // q_y_y
-  Q(6,7) = sigma2_q_yaw * pow(dt_, 3) / 2;  // q_y_vy
-  Q(7,6) = Q(6,7);
-  Q(7,7) = sigma2_q_yaw * pow(dt_, 2);      // q_vy_vy
 }
 
 }  // namespace rm_auto_aim

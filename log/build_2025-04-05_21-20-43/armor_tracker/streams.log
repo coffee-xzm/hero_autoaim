@@ -1,0 +1,78 @@
+[0.187s] Invoking command in '/home/coffee/rv_autokal/build/armor_tracker': AMENT_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/coffee/rv_autokal/build/armor_tracker -- -j32 -l32
+[0.210s] [35m[1mConsolidate compiler generated dependencies of target armor_tracker_node[0m
+[0.212s] [35m[1mConsolidate compiler generated dependencies of target armor_tracker[0m
+[0.217s] [ 33%] Built target armor_tracker_node
+[0.230s] [ 50%] [32mBuilding CXX object CMakeFiles/armor_tracker.dir/src/tracker.cpp.o[0m
+[0.231s] [ 66%] [32mBuilding CXX object CMakeFiles/armor_tracker.dir/src/tracker_node.cpp.o[0m
+[1.043s] In file included from [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker.cpp:3[m[K:
+[1.043s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/include/armor_tracker/tracker.hpp:30:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kdeque[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+[1.043s]    30 |   std::[01;31m[Kdeque[m[K<std::pair<double,double>> yaw_history_;
+[1.043s]       |        [01;31m[K^~~~~[m[K
+[1.043s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/include/armor_tracker/tracker.hpp:21:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::deque[m[K’ is defined in header ‘[01m[K<deque>[m[K’; did you forget to ‘[01m[K#include <deque>[m[K’?
+[1.043s]    20 | #include "auto_aim_interfaces/msg/target.hpp"
+[1.043s]   +++ |+[32m[K#include <deque>[m[K
+[1.043s]    21 | 
+[2.030s] In file included from [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/include/armor_tracker/tracker_node.hpp:23[m[K,
+[2.030s]                  from [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:2[m[K:
+[2.030s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/include/armor_tracker/tracker.hpp:30:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kdeque[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+[2.030s]    30 |   std::[01;31m[Kdeque[m[K<std::pair<double,double>> yaw_history_;
+[2.030s]       |        [01;31m[K^~~~~[m[K
+[2.030s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/include/armor_tracker/tracker.hpp:21:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::deque[m[K’ is defined in header ‘[01m[K<deque>[m[K’; did you forget to ‘[01m[K#include <deque>[m[K’?
+[2.030s]    20 | #include "auto_aim_interfaces/msg/target.hpp"
+[2.030s]   +++ |+[32m[K#include <deque>[m[K
+[2.030s]    21 | 
+[2.074s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::Tracker::update(const SharedPtr&)[m[K’:
+[2.074s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker.cpp:134:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_history_[m[K’ was not declared in this scope
+[2.074s]   134 |       [01;31m[Kyaw_history_[m[K.clear();
+[2.074s]       |       [01;31m[K^~~~~~~~~~~~[m[K
+[2.079s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker.cpp:144:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_history_[m[K’ was not declared in this scope
+[2.079s]   144 |       if(lost_count_ > 3) [01;31m[Kyaw_history_[m[K.clear();
+[2.079s]       |                           [01;31m[K^~~~~~~~~~~~[m[K
+[2.124s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:187:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdouble rm_auto_aim::ArmorTrackerNode::predictYawByLeastSquare(const rclcpp::Time&)[m[K’
+[2.124s]   187 | double [01;31m[KArmorTrackerNode[m[K::predictYawByLeastSquare(const rclcpp::Time& current_time)
+[2.124s]       |        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.124s] In file included from [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:2[m[K:
+[2.124s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/include/armor_tracker/tracker_node.hpp:40:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kdouble rm_auto_aim::ArmorTrackerNode::predictYawByLeastSquare(double)[m[K’
+[2.124s]    40 |   double [01;36m[KpredictYawByLeastSquare[m[K(double current_time);
+[2.124s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.124s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/include/armor_tracker/tracker_node.hpp:31:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass rm_auto_aim::ArmorTrackerNode[m[K’ defined here
+[2.124s]    31 | class [01;36m[KArmorTrackerNode[m[K : public rclcpp::Node
+[2.124s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[2.133s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::ArmorTrackerNode::armorsCallback(auto_aim_interfaces::msg::Armors_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.133s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:266:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rm_auto_aim::Tracker[m[K’ has no member named ‘[01m[KgetTargetMsg[m[K’
+[2.133s]   266 |     target_msg = tracker_->[01;31m[KgetTargetMsg[m[K();
+[2.133s]       |                            [01;31m[K^~~~~~~~~~~~[m[K
+[2.133s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:270:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rm_auto_aim::Tracker[m[K’ has no member named ‘[01m[Kyaw_history_[m[K’
+[2.133s]   270 |     tracker_->[01;31m[Kyaw_history_[m[K.push_back({current_time, current_yaw});
+[2.133s]       |               [01;31m[K^~~~~~~~~~~~[m[K
+[2.133s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:273:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rm_auto_aim::Tracker[m[K’ has no member named ‘[01m[Kyaw_history_[m[K’
+[2.133s]   273 |     if (tracker_->info_yaw_diff > vyaw_err_thershold && !tracker_->[01;31m[Kyaw_history_[m[K.empty()) {
+[2.133s]       |                                                                    [01;31m[K^~~~~~~~~~~~[m[K
+[2.133s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:275:54:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kdouble[m[K’
+[2.133s]   275 |       double predicted_yaw = predictYawByLeastSquare([01;31m[Kcurrent_time[m[K);
+[2.133s]       |                                                      [01;31m[K^~~~~~~~~~~~[m[K
+[2.133s]       |                                                      [01;31m[K|[m[K
+[2.133s]       |                                                      [01;31m[Krclcpp::Time[m[K
+[2.133s] In file included from [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:2[m[K:
+[2.133s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/include/armor_tracker/tracker_node.hpp:40:41:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kdouble rm_auto_aim::ArmorTrackerNode::predictYawByLeastSquare(double)[m[K’
+[2.133s]    40 |   double predictYawByLeastSquare([01;36m[Kdouble current_time[m[K);
+[2.133s]       |                                  [01;36m[K~~~~~~~^~~~~~~~~~~~[m[K
+[2.134s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:327:38:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+[2.134s]   327 | void ArmorTrackerNode::publishMarkers[01;31m[K([m[Kconst auto_aim_interfaces::msg::Target & target_msg)
+[2.134s]       |                                      [01;31m[K^[m[K
+[2.142s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+[2.142s]                  from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp:18[m[K,
+[2.142s]                  from [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:406[m[K:
+[2.142s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:[m[K At global scope:
+[2.142s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:411:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[2.142s]   411 | [01;31m[KRCLCPP_COMPONENTS_REGISTER_NODE[m[K(rm_auto_aim::ArmorTrackerNode)
+[2.142s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.142s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:9:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[2.142s]     9 | [01;36m[K{[m[K
+[2.142s]       | [01;36m[K^[m[K
+[2.379s] gmake[2]: *** [CMakeFiles/armor_tracker.dir/build.make:90: CMakeFiles/armor_tracker.dir/src/tracker.cpp.o] Error 1
+[2.379s] gmake[2]: *** Waiting for unfinished jobs....
+[3.810s] gmake[2]: *** [CMakeFiles/armor_tracker.dir/build.make:104: CMakeFiles/armor_tracker.dir/src/tracker_node.cpp.o] Error 1
+[3.810s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/armor_tracker.dir/all] Error 2
+[3.810s] gmake: *** [Makefile:146: all] Error 2
+[3.812s] Invoked command in '/home/coffee/rv_autokal/build/armor_tracker' returned '2': AMENT_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/coffee/rv_autokal/build/armor_tracker -- -j32 -l32

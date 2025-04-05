@@ -1,0 +1,428 @@
+[0.009s] Invoking command in '/home/coffee/rv_autokal/src/build/auto_aim_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/coffee/rv_autokal/src/rm_auto_aim/auto_aim_interfaces -DCMAKE_INSTALL_PREFIX=/home/coffee/rv_autokal/src/install/auto_aim_interfaces
+[0.587s] -- The C compiler identification is GNU 11.4.0
+[2.377s] -- The CXX compiler identification is GNU 11.4.0
+[3.522s] -- Detecting C compiler ABI info
+[4.323s] -- Detecting C compiler ABI info - done
+[4.327s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.329s] -- Detecting C compile features
+[4.329s] -- Detecting C compile features - done
+[4.333s] -- Detecting CXX compiler ABI info
+[4.757s] -- Detecting CXX compiler ABI info - done
+[4.761s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.761s] -- Detecting CXX compile features
+[4.761s] -- Detecting CXX compile features - done
+[4.780s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.874s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.953s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[4.958s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.963s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.356s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.387s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[5.623s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.776s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.972s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.805s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[6.807s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[9.389s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[9.389s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[9.389s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[9.389s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[9.402s] -- Found PythonExtra: .so  
+[9.670s] -- Configuring done
+[9.705s] -- Generating done
+[9.712s] -- Build files have been written to: /home/coffee/rv_autokal/src/build/auto_aim_interfaces
+[9.720s] Invoked command in '/home/coffee/rv_autokal/src/build/auto_aim_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/coffee/rv_autokal/src/rm_auto_aim/auto_aim_interfaces -DCMAKE_INSTALL_PREFIX=/home/coffee/rv_autokal/src/install/auto_aim_interfaces
+[9.721s] Invoking command in '/home/coffee/rv_autokal/src/build/auto_aim_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/coffee/rv_autokal/src/build/auto_aim_interfaces -- -j32 -l32
+[9.741s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[9.746s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[9.749s] [  2%] Built target ament_cmake_python_copy_auto_aim_interfaces
+[9.901s] running egg_info
+[9.901s] creating auto_aim_interfaces.egg-info
+[9.902s] writing auto_aim_interfaces.egg-info/PKG-INFO
+[9.902s] writing dependency_links to auto_aim_interfaces.egg-info/dependency_links.txt
+[9.902s] writing top-level names to auto_aim_interfaces.egg-info/top_level.txt
+[9.902s] writing manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'
+[9.904s] reading manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'
+[9.904s] writing manifest file 'auto_aim_interfaces.egg-info/SOURCES.txt'
+[9.920s] [  2%] Built target ament_cmake_python_build_auto_aim_interfaces_egg
+[10.174s] [  2%] Built target auto_aim_interfaces__cpp
+[10.181s] [  3%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[10.181s] [  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[10.184s] [  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[10.197s] [  8%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/armors__functions.c.o[0m
+[10.197s] [  8%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/debug_light__functions.c.o[0m
+[10.197s] [  9%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/target__functions.c.o[0m
+[10.197s] [ 10%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/debug_armors__functions.c.o[0m
+[10.198s] [ 11%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/armor__functions.c.o[0m
+[10.198s] [ 12%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/tracker_info__functions.c.o[0m
+[10.199s] [ 13%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/debug_lights__functions.c.o[0m
+[10.199s] [ 14%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auto_aim_interfaces/msg/detail/debug_armor__functions.c.o[0m
+[10.254s] [ 16%] [32m[1mLinking C shared library libauto_aim_interfaces__rosidl_generator_c.so[0m
+[10.454s] [ 17%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/armor__type_support.cpp.o[0m
+[10.454s] [ 18%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/armors__type_support.cpp.o[0m
+[10.455s] [ 19%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/target__type_support.cpp.o[0m
+[10.456s] [ 20%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/debug_lights__type_support.cpp.o[0m
+[10.456s] [ 21%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/tracker_info__type_support.cpp.o[0m
+[10.457s] [ 22%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/debug_armors__type_support.cpp.o[0m
+[10.457s] [ 24%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/debug_light__type_support.cpp.o[0m
+[10.460s] [ 25%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auto_aim_interfaces/msg/debug_armor__type_support.cpp.o[0m
+[10.534s] [ 26%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/tracker_info__type_support.cpp.o[0m
+[10.534s] [ 27%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/target__type_support.cpp.o[0m
+[10.534s] [ 31%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/debug_lights__type_support.cpp.o[0m
+[10.534s] [ 31%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/debug_light__type_support.cpp.o[0m
+[10.535s] [ 31%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/armor__type_support.cpp.o[0m
+[10.535s] [ 32%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/debug_armors__type_support.cpp.o[0m
+[10.535s] [ 33%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/armors__type_support.cpp.o[0m
+[10.535s] [ 34%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auto_aim_interfaces/msg/detail/debug_armor__type_support.cpp.o[0m
+[10.590s] [ 35%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/target__type_support.cpp.o[0m
+[10.591s] [ 36%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/debug_armor__type_support.cpp.o[0m
+[10.591s] [ 39%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/debug_light__type_support.cpp.o[0m
+[10.591s] [ 39%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/armor__type_support.cpp.o[0m
+[10.592s] [ 40%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/armors__type_support.cpp.o[0m
+[10.592s] [ 41%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/debug_lights__type_support.cpp.o[0m
+[10.592s] [ 42%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/debug_armors__type_support.cpp.o[0m
+[10.592s] [ 43%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auto_aim_interfaces/msg/detail/dds_fastrtps/tracker_info__type_support.cpp.o[0m
+[10.650s] [ 43%] Built target auto_aim_interfaces__rosidl_generator_c
+[10.659s] [ 44%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[10.659s] [ 45%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[10.660s] [ 47%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[10.754s] [ 48%] [32m[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_cpp.so[0m
+[10.973s] [ 49%] [32m[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[10.986s] [ 49%] Built target auto_aim_interfaces__rosidl_typesupport_cpp
+[11.015s] [ 50%] [32m[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.047s] [ 51%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/armors__type_support.cpp.o[0m
+[11.047s] [ 52%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/debug_armors__type_support.cpp.o[0m
+[11.048s] [ 54%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/debug_armor__type_support.cpp.o[0m
+[11.048s] [ 55%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/target__type_support.cpp.o[0m
+[11.048s] [ 57%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/armor__type_support.cpp.o[0m
+[11.048s] [ 57%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/debug_lights__type_support.cpp.o[0m
+[11.049s] [ 58%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/debug_light__type_support.cpp.o[0m
+[11.054s] [ 59%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auto_aim_interfaces/msg/tracker_info__type_support.cpp.o[0m
+[11.071s] [ 60%] [32m[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_c.so[0m
+[11.126s] [ 63%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/armor__type_support.c.o[0m
+[11.126s] [ 63%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/debug_light__type_support.c.o[0m
+[11.127s] [ 64%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/debug_armor__type_support.c.o[0m
+[11.127s] [ 65%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/debug_armors__type_support.c.o[0m
+[11.128s] [ 66%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/target__type_support.c.o[0m
+[11.128s] [ 67%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/armors__type_support.c.o[0m
+[11.129s] [ 68%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/tracker_info__type_support.c.o[0m
+[11.129s] [ 70%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auto_aim_interfaces/msg/detail/debug_lights__type_support.c.o[0m
+[11.154s] [ 71%] [32m[1mLinking C shared library libauto_aim_interfaces__rosidl_typesupport_introspection_c.so[0m
+[11.175s] [ 74%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/debug_lights__type_support_c.cpp.o[0m
+[11.175s] [ 74%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/target__type_support_c.cpp.o[0m
+[11.175s] [ 74%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/debug_light__type_support_c.cpp.o[0m
+[11.175s] [ 75%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/debug_armor__type_support_c.cpp.o[0m
+[11.176s] [ 77%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/debug_armors__type_support_c.cpp.o[0m
+[11.176s] [ 79%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/armors__type_support_c.cpp.o[0m
+[11.176s] [ 79%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/armor__type_support_c.cpp.o[0m
+[11.176s] [ 80%] [32mBuilding CXX object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auto_aim_interfaces/msg/detail/tracker_info__type_support_c.cpp.o[0m
+[11.359s] [ 80%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_cpp
+[11.401s] [ 80%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_cpp
+[11.402s] [ 81%] [32m[1mLinking CXX shared library libauto_aim_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[11.449s] [ 81%] Built target auto_aim_interfaces__rosidl_typesupport_c
+[11.537s] [ 81%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_c
+[12.044s] [ 81%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_c
+[12.054s] [ 81%] Built target auto_aim_interfaces
+[12.065s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[12.734s] [ 82%] Built target auto_aim_interfaces__py
+[12.743s] [ 85%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_armors_s.c.o[0m
+[12.743s] [ 86%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_armor_s.c.o[0m
+[12.743s] [ 86%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_target_s.c.o[0m
+[12.743s] [ 87%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_debug_light_s.c.o[0m
+[12.744s] [ 88%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_debug_armor_s.c.o[0m
+[12.744s] [ 89%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_debug_lights_s.c.o[0m
+[12.747s] [ 91%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_debug_armors_s.c.o[0m
+[12.747s] [ 91%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auto_aim_interfaces/msg/_tracker_info_s.c.o[0m
+[12.845s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/auto_aim_interfaces/libauto_aim_interfaces__rosidl_generator_py.so[0m
+[13.132s] [ 93%] Built target auto_aim_interfaces__rosidl_generator_py
+[13.141s] [ 95%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[13.141s] [ 95%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[13.142s] [ 96%] [32mBuilding C object CMakeFiles/auto_aim_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[13.205s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[13.205s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[13.205s] [100%] [32m[1mLinking C shared library rosidl_generator_py/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[13.457s] [100%] Built target auto_aim_interfaces__rosidl_typesupport_c__pyext
+[13.457s] [100%] Built target auto_aim_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[13.457s] [100%] Built target auto_aim_interfaces__rosidl_typesupport_introspection_c__pyext
+[13.464s] Invoked command in '/home/coffee/rv_autokal/src/build/auto_aim_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/coffee/rv_autokal/src/build/auto_aim_interfaces -- -j32 -l32
+[13.468s] Invoking command in '/home/coffee/rv_autokal/src/build/auto_aim_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/coffee/rv_autokal/src/build/auto_aim_interfaces
+[13.472s] -- Install configuration: ""
+[13.472s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/ament_index/resource_index/rosidl_interfaces/auto_aim_interfaces
+[13.472s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces
+[13.472s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg
+[13.472s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armor.h
+[13.473s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_lights.h
+[13.473s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail
+[13.473s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__type_support.h
+[13.473s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__type_support.h
+[13.473s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__type_support.h
+[13.473s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__struct.h
+[13.473s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__functions.c
+[13.473s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__struct.h
+[13.473s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__functions.h
+[13.474s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__struct.h
+[13.474s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__functions.h
+[13.474s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__functions.c
+[13.474s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__type_support.h
+[13.474s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__struct.h
+[13.474s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__struct.h
+[13.474s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__functions.c
+[13.474s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__type_support.h
+[13.474s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__functions.h
+[13.474s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__functions.h
+[13.474s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__struct.h
+[13.474s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__struct.h
+[13.475s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__functions.c
+[13.475s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__functions.c
+[13.475s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__functions.h
+[13.475s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__functions.h
+[13.475s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__functions.c
+[13.475s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__functions.c
+[13.475s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__type_support.h
+[13.475s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__struct.h
+[13.475s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__functions.c
+[13.475s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__type_support.h
+[13.475s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__functions.h
+[13.476s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__functions.h
+[13.476s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.h
+[13.476s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_light.h
+[13.476s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_generator_c__visibility_control.h
+[13.476s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/target.h
+[13.476s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armors.h
+[13.476s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armors.h
+[13.476s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armor.h
+[13.476s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/tracker_info.h
+[13.476s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/library_path.sh
+[13.476s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/library_path.dsv
+[13.476s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_c.so
+[13.476s] -- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_c.so" to ""
+[13.476s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces
+[13.476s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg
+[13.476s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[13.477s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail
+[13.477s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_c.h
+[13.477s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_fastrtps_c.h
+[13.477s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_fastrtps_c.h
+[13.477s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_fastrtps_c.h
+[13.477s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_fastrtps_c.h
+[13.477s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_fastrtps_c.h
+[13.477s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_fastrtps_c.h
+[13.477s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_fastrtps_c.h
+[13.477s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_c.so
+[13.477s] -- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[13.477s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces
+[13.477s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg
+[13.478s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail
+[13.478s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_introspection_c.h
+[13.478s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__type_support.c
+[13.478s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_introspection_c.h
+[13.478s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_introspection_c.h
+[13.478s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_introspection_c.h
+[13.478s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__type_support.c
+[13.478s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__type_support.c
+[13.478s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_introspection_c.h
+[13.478s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__type_support.c
+[13.478s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_introspection_c.h
+[13.478s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__type_support.c
+[13.478s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__type_support.c
+[13.478s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.c
+[13.478s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_introspection_c.h
+[13.479s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__type_support.c
+[13.479s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_introspection_c.h
+[13.479s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[13.479s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_c.so
+[13.479s] -- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[13.479s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_c.so
+[13.479s] -- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_c.so" to ""
+[13.479s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces
+[13.479s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg
+[13.479s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/target.hpp
+[13.479s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_light.hpp
+[13.480s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail
+[13.480s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__builder.hpp
+[13.480s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__type_support.hpp
+[13.480s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__traits.hpp
+[13.480s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__struct.hpp
+[13.480s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__type_support.hpp
+[13.480s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__struct.hpp
+[13.480s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__struct.hpp
+[13.480s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__struct.hpp
+[13.480s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__traits.hpp
+[13.480s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__struct.hpp
+[13.480s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__builder.hpp
+[13.480s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__traits.hpp
+[13.480s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__traits.hpp
+[13.480s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__builder.hpp
+[13.481s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__builder.hpp
+[13.481s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__struct.hpp
+[13.481s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__type_support.hpp
+[13.481s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__type_support.hpp
+[13.481s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.hpp
+[13.481s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__builder.hpp
+[13.481s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__struct.hpp
+[13.481s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__traits.hpp
+[13.481s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__struct.hpp
+[13.481s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__traits.hpp
+[13.481s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__traits.hpp
+[13.481s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__type_support.hpp
+[13.482s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__builder.hpp
+[13.482s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__builder.hpp
+[13.482s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__builder.hpp
+[13.482s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__traits.hpp
+[13.482s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__type_support.hpp
+[13.482s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__type_support.hpp
+[13.482s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armor.hpp
+[13.482s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_armors.hpp
+[13.482s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/debug_lights.hpp
+[13.482s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armor.hpp
+[13.482s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[13.482s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/tracker_info.hpp
+[13.483s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/armors.hpp
+[13.483s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces
+[13.483s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg
+[13.483s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[13.483s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail
+[13.483s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_fastrtps_cpp.hpp
+[13.483s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_fastrtps_cpp.hpp
+[13.483s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/dds_fastrtps
+[13.483s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_fastrtps_cpp.hpp
+[13.483s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_fastrtps_cpp.hpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_fastrtps_cpp.hpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_fastrtps_cpp.hpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_fastrtps_cpp.hpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_cpp.hpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[13.484s] -- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[13.484s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces
+[13.484s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg
+[13.484s] -- Up-to-date: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__rosidl_typesupport_introspection_cpp.hpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__rosidl_typesupport_introspection_cpp.hpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_lights__type_support.cpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__type_support.cpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__rosidl_typesupport_introspection_cpp.hpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__rosidl_typesupport_introspection_cpp.hpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__type_support.cpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armor__rosidl_typesupport_introspection_cpp.hpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armors__rosidl_typesupport_introspection_cpp.hpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_light__type_support.cpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__rosidl_typesupport_introspection_cpp.hpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/tracker_info__type_support.cpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/target__type_support.cpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__type_support.cpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/debug_armor__rosidl_typesupport_introspection_cpp.hpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/include/auto_aim_interfaces/auto_aim_interfaces/msg/detail/armors__type_support.cpp
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so
+[13.484s] -- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_cpp.so
+[13.484s] -- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_cpp.so" to ""
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/pythonpath.sh
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/pythonpath.dsv
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[13.484s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/__init__.py
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/libauto_aim_interfaces__rosidl_generator_py.so
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/_auto_aim_interfaces_s.ep.rosidl_typesupport_c.c
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armor_s.c
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armors_s.c
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armors_s.c
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_light.py
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armor.py
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armor_s.c
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_lights.py
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target_s.c
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armors.py
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/__init__.py
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target.py
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armor.py
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_light_s.c
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_lights_s.c
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_tracker_info.py
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_tracker_info_s.c
+[13.485s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armors.py
+[13.508s] Listing '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces'...
+[13.509s] Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/__init__.py'...
+[13.509s] Listing '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg'...
+[13.509s] Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/__init__.py'...
+[13.509s] Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armor.py'...
+[13.509s] Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_armors.py'...
+[13.509s] Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armor.py'...
+[13.509s] Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_armors.py'...
+[13.509s] Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_light.py'...
+[13.509s] Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_debug_lights.py'...
+[13.509s] Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_target.py'...
+[13.509s] Compiling '/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/msg/_tracker_info.py'...
+[13.511s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[13.512s] -- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[13.512s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[13.512s] -- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[13.512s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[13.512s] -- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages/auto_aim_interfaces/auto_aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[13.512s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_py.so
+[13.512s] -- Set runtime path of "/home/coffee/rv_autokal/src/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_py.so" to ""
+[13.512s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armor.idl
+[13.513s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armors.idl
+[13.513s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Target.idl
+[13.513s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLight.idl
+[13.513s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLights.idl
+[13.513s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmor.idl
+[13.513s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmors.idl
+[13.513s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/TrackerInfo.idl
+[13.513s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armor.msg
+[13.513s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Armors.msg
+[13.513s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/Target.msg
+[13.513s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLight.msg
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugLights.msg
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmor.msg
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/DebugArmors.msg
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/msg/TrackerInfo.msg
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/ament_index/resource_index/package_run_dependencies/auto_aim_interfaces
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/ament_index/resource_index/parent_prefix_path/auto_aim_interfaces
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/ament_prefix_path.sh
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/ament_prefix_path.dsv
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/path.sh
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/environment/path.dsv
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.bash
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.sh
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.zsh
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/local_setup.dsv
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/package.dsv
+[13.514s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/ament_index/resource_index/packages/auto_aim_interfaces
+[13.515s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cExport.cmake
+[13.515s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cExport-noconfig.cmake
+[13.515s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[13.515s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[13.515s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[13.515s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[13.515s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cExport.cmake
+[13.515s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[13.515s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_cppExport.cmake
+[13.515s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[13.515s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[13.515s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cppExport.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_pyExport.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/export_auto_aim_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake-extras.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfacesConfig.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/cmake/auto_aim_interfacesConfig-version.cmake
+[13.516s] -- Installing: /home/coffee/rv_autokal/src/install/auto_aim_interfaces/share/auto_aim_interfaces/package.xml
+[13.517s] Invoked command in '/home/coffee/rv_autokal/src/build/auto_aim_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/coffee/rv_autokal/src/build/auto_aim_interfaces

@@ -1,15 +1,9 @@
 /home/coffee/rv_autokal/install/rm_vision_bringup/share/rm_vision_bringup/launch/common.py
-/home/coffee/rv_autokal/install/rm_vision_bringup/share/rm_vision_bringup/launch/common.py:Zone.Identifier
 /home/coffee/rv_autokal/install/rm_vision_bringup/share/rm_vision_bringup/launch/no_hardware.launch.py
-/home/coffee/rv_autokal/install/rm_vision_bringup/share/rm_vision_bringup/launch/no_hardware.launch.py:Zone.Identifier
 /home/coffee/rv_autokal/install/rm_vision_bringup/share/rm_vision_bringup/launch/vision_bringup.launch.py
-/home/coffee/rv_autokal/install/rm_vision_bringup/share/rm_vision_bringup/launch/vision_bringup.launch.py:Zone.Identifier
 /home/coffee/rv_autokal/install/rm_vision_bringup/share/rm_vision_bringup/config/camera_info.yaml
-/home/coffee/rv_autokal/install/rm_vision_bringup/share/rm_vision_bringup/config/camera_info.yaml:Zone.Identifier
 /home/coffee/rv_autokal/install/rm_vision_bringup/share/rm_vision_bringup/config/launch_params.yaml
-/home/coffee/rv_autokal/install/rm_vision_bringup/share/rm_vision_bringup/config/launch_params.yaml:Zone.Identifier
 /home/coffee/rv_autokal/install/rm_vision_bringup/share/rm_vision_bringup/config/node_params.yaml
-/home/coffee/rv_autokal/install/rm_vision_bringup/share/rm_vision_bringup/config/node_params.yaml:Zone.Identifier
 /home/coffee/rv_autokal/install/rm_vision_bringup/share/ament_index/resource_index/package_run_dependencies/rm_vision_bringup
 /home/coffee/rv_autokal/install/rm_vision_bringup/share/ament_index/resource_index/parent_prefix_path/rm_vision_bringup
 /home/coffee/rv_autokal/install/rm_vision_bringup/share/rm_vision_bringup/environment/ament_prefix_path.sh

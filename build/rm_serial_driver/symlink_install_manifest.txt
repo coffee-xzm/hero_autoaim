@@ -1,17 +1,12 @@
 /home/coffee/rv_autokal/install/rm_serial_driver/lib/rm_serial_driver/rm_serial_driver_node
 /home/coffee/rv_autokal/install/rm_serial_driver/include/rm_serial_driver/crc.hpp
-/home/coffee/rv_autokal/install/rm_serial_driver/include/rm_serial_driver/crc.hpp:Zone.Identifier
 /home/coffee/rv_autokal/install/rm_serial_driver/include/rm_serial_driver/packet.hpp
-/home/coffee/rv_autokal/install/rm_serial_driver/include/rm_serial_driver/packet.hpp:Zone.Identifier
 /home/coffee/rv_autokal/install/rm_serial_driver/include/rm_serial_driver/rm_serial_driver.hpp
-/home/coffee/rv_autokal/install/rm_serial_driver/include/rm_serial_driver/rm_serial_driver.hpp:Zone.Identifier
 /home/coffee/rv_autokal/install/rm_serial_driver/share/rm_serial_driver/environment/library_path.sh
 /home/coffee/rv_autokal/install/rm_serial_driver/share/rm_serial_driver/environment/library_path.dsv
 /home/coffee/rv_autokal/install/rm_serial_driver/lib/librm_serial_driver.so
 /home/coffee/rv_autokal/install/rm_serial_driver/share/rm_serial_driver/config/serial_driver.yaml
-/home/coffee/rv_autokal/install/rm_serial_driver/share/rm_serial_driver/config/serial_driver.yaml:Zone.Identifier
 /home/coffee/rv_autokal/install/rm_serial_driver/share/rm_serial_driver/launch/serial_driver.launch.py
-/home/coffee/rv_autokal/install/rm_serial_driver/share/rm_serial_driver/launch/serial_driver.launch.py:Zone.Identifier
 /home/coffee/rv_autokal/install/rm_serial_driver/share/ament_index/resource_index/package_run_dependencies/rm_serial_driver
 /home/coffee/rv_autokal/install/rm_serial_driver/share/ament_index/resource_index/parent_prefix_path/rm_serial_driver
 /home/coffee/rv_autokal/install/rm_serial_driver/share/rm_serial_driver/environment/ament_prefix_path.sh

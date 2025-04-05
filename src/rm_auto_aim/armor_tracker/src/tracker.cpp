@@ -23,10 +23,7 @@ Tracker::Tracker(double max_match_distance, double max_match_yaw_diff)
   measurement(Eigen::VectorXd::Zero(4)),
   target_state(Eigen::VectorXd::Zero(9)),
   max_match_distance_(max_match_distance),
-  max_match_yaw_diff_(max_match_yaw_diff),
-  adaptive_yaw_tuning_(false),
-  yaw_error_threshold_(0.1),
-  original_s2qyaw_(0.01)
+  max_match_yaw_diff_(max_match_yaw_diff)
 {
 }
 
@@ -103,18 +100,6 @@ void Tracker::update(const Armors::SharedPtr & armors_msg)
       double measured_yaw = orientationToYaw(tracked_armor.pose.orientation);
       measurement = Eigen::Vector4d(p.x, p.y, p.z, measured_yaw);
       target_state = ekf.update(measurement);
-      
-      // Adaptive yaw parameter tuning
-      if (adaptive_yaw_tuning_) {
-        double yaw_error = angles::shortest_angular_distance(measured_yaw, target_state(6));
-        if (fabs(yaw_error) > yaw_error_threshold_) {
-          // Reduce sigma2_q_yaw proportionally to error
-          ekf.setSigma2QYaw(original_s2qyaw_ * (1.0 - 0.5 * (fabs(yaw_error) - yaw_error_threshold_)));
-        } else {
-          // Restore original value when error is below threshold
-          ekf.setSigma2QYaw(original_s2qyaw_);
-        }
-      }
       RCLCPP_DEBUG(rclcpp::get_logger("armor_tracker"), "EKF update");
     } else if (same_id_armors_count == 1 && yaw_diff > max_match_yaw_diff_) {
       // Matched armor not found, but there is only one armor with the same id
@@ -146,6 +131,7 @@ void Tracker::update(const Armors::SharedPtr & armors_msg)
     } else {
       detect_count_ = 0;
       tracker_state = LOST;
+      yaw_history_.clear();
     }
   } else if (tracker_state == TRACKING) {
     if (!matched) {
@@ -155,6 +141,7 @@ void Tracker::update(const Armors::SharedPtr & armors_msg)
   } else if (tracker_state == TEMP_LOST) {
     if (!matched) {
       lost_count_++;
+      if(lost_count_ > 3) yaw_history_.clear();
       if (lost_count_ > lost_thres) {
         lost_count_ = 0;
         tracker_state = LOST;

@@ -1,0 +1,42 @@
+[0.109s] Invoking command in '/home/coffee/rv_autokal/build/armor_detector': AMENT_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/coffee/rv_autokal/build/armor_detector -- -j32 -l32
+[0.131s] [ 13%] Built target gtest_main
+[0.131s] [ 26%] Built target gtest
+[0.133s] [ 40%] Built target armor_detector_node
+[0.134s] [ 73%] Built target armor_detector
+[0.147s] [ 86%] Built target test_node_startup
+[0.147s] [100%] Built target test_number_cls
+[0.154s] Invoked command in '/home/coffee/rv_autokal/build/armor_detector' returned '0': AMENT_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/coffee/rv_autokal/build/armor_detector -- -j32 -l32
+[0.155s] Invoking command in '/home/coffee/rv_autokal/build/armor_detector': AMENT_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/coffee/rv_autokal/build/armor_detector
+[0.159s] -- Install configuration: ""
+[0.159s] -- Execute custom install script
+[0.159s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/lib/armor_detector/armor_detector_node
+[0.159s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/include/armor_detector/armor.hpp
+[0.159s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/include/armor_detector/detector.hpp
+[0.160s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/include/armor_detector/detector_node.hpp
+[0.160s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/include/armor_detector/number_classifier.hpp
+[0.160s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/include/armor_detector/pnp_solver.hpp
+[0.160s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/environment/library_path.sh
+[0.160s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/environment/library_path.dsv
+[0.160s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/lib/libarmor_detector.so
+[0.160s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/model/label.txt
+[0.160s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/model/mlp.onnx
+[0.160s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/ament_index/resource_index/package_run_dependencies/armor_detector
+[0.160s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/ament_index/resource_index/parent_prefix_path/armor_detector
+[0.160s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/environment/ament_prefix_path.sh
+[0.161s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/environment/ament_prefix_path.dsv
+[0.161s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/environment/path.sh
+[0.161s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/environment/path.dsv
+[0.161s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/local_setup.bash
+[0.161s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/local_setup.sh
+[0.161s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/local_setup.zsh
+[0.161s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/local_setup.dsv
+[0.161s] -- Symlinking: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/package.dsv
+[0.164s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/ament_index/resource_index/packages/armor_detector
+[0.165s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/ament_index/resource_index/rclcpp_components/armor_detector
+[0.165s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.165s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.165s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/cmake/ament_cmake_export_libraries-extras.cmake
+[0.165s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/cmake/armor_detectorConfig.cmake
+[0.165s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/cmake/armor_detectorConfig-version.cmake
+[0.165s] -- Up-to-date symlink: /home/coffee/rv_autokal/install/armor_detector/share/armor_detector/package.xml
+[0.175s] Invoked command in '/home/coffee/rv_autokal/build/armor_detector' returned '0': AMENT_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/coffee/rv_autokal/build/armor_detector

@@ -1,0 +1,38 @@
+[0.245s] Invoking command in '/home/coffee/rv_autokal/build/armor_tracker': AMENT_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/coffee/rv_autokal/build/armor_tracker -- -j32 -l32
+[0.270s] [35m[1mConsolidate compiler generated dependencies of target armor_tracker[0m
+[0.271s] [ 33%] Built target armor_tracker_node
+[0.284s] [ 50%] [32mBuilding CXX object CMakeFiles/armor_tracker.dir/src/tracker_node.cpp.o[0m
+[2.254s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:[m[K In member function ‘[01m[Kdouble rm_auto_aim::ArmorTrackerNode::predictYawByLeastSquare(const rclcpp::Time&)[m[K’:
+[2.255s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:189:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_history_[m[K’ was not declared in this scope
+[2.255s]   189 |   if ([01;31m[Kyaw_history_[m[K.size() < 3) {
+[2.255s]       |       [01;31m[K^~~~~~~~~~~~[m[K
+[2.259s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:195:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_history_[m[K’ was not declared in this scope
+[2.259s]   195 |   double n = [01;31m[Kyaw_history_[m[K.size();
+[2.259s]       |              [01;31m[K^~~~~~~~~~~~[m[K
+[2.268s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::ArmorTrackerNode::armorsCallback(auto_aim_interfaces::msg::Armors_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.268s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:266:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rm_auto_aim::Tracker[m[K’ has no member named ‘[01m[KgetTargetMsg[m[K’
+[2.268s]   266 |     target_msg = tracker_->[01;31m[KgetTargetMsg[m[K();
+[2.268s]       |                            [01;31m[K^~~~~~~~~~~~[m[K
+[2.269s] [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:270:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::deque<std::pair<double, double> >::push_back(<brace-enclosed initializer list>)[m[K’
+[2.269s]   270 |     [01;31m[Ktracker_->yaw_history_.push_back({current_time, current_yaw})[m[K;
+[2.269s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.269s] In file included from [01m[K/usr/include/c++/11/deque:67[m[K,
+[2.269s]                  from [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/include/armor_tracker/tracker.hpp:17[m[K,
+[2.269s]                  from [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/include/armor_tracker/tracker_node.hpp:23[m[K,
+[2.269s]                  from [01m[K/home/coffee/rv_autokal/src/rm_auto_aim/armor_tracker/src/tracker_node.cpp:2[m[K:
+[2.270s] [01m[K/usr/include/c++/11/bits/stl_deque.h:1496:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::pair<double, double>; _Alloc = std::allocator<std::pair<double, double> >; std::deque<_Tp, _Alloc>::value_type = std::pair<double, double>][m[K’
+[2.270s]  1496 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+[2.270s]       |       [01;36m[K^~~~~~~~~[m[K
+[2.270s] [01m[K/usr/include/c++/11/bits/stl_deque.h:1496:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst std::pair<double, double>&[m[K’}
+[2.270s]  1496 |       push_back([01;36m[Kconst value_type& __x[m[K)
+[2.270s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.270s] [01m[K/usr/include/c++/11/bits/stl_deque.h:1511:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::deque<_Tp, _Alloc>::push_back(std::deque<_Tp, _Alloc>::value_type&&) [with _Tp = std::pair<double, double>; _Alloc = std::allocator<std::pair<double, double> >; std::deque<_Tp, _Alloc>::value_type = std::pair<double, double>][m[K’
+[2.270s]  1511 |       [01;36m[Kpush_back[m[K(value_type&& __x)
+[2.270s]       |       [01;36m[K^~~~~~~~~[m[K
+[2.270s] [01m[K/usr/include/c++/11/bits/stl_deque.h:1511:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::deque<std::pair<double, double> >::value_type&&[m[K’ {aka ‘[01m[Kstd::pair<double, double>&&[m[K’}
+[2.270s]  1511 |       push_back([01;36m[Kvalue_type&& __x[m[K)
+[2.270s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[4.020s] gmake[2]: *** [CMakeFiles/armor_tracker.dir/build.make:104: CMakeFiles/armor_tracker.dir/src/tracker_node.cpp.o] Error 1
+[4.020s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/armor_tracker.dir/all] Error 2
+[4.021s] gmake: *** [Makefile:146: all] Error 2
+[4.022s] Invoked command in '/home/coffee/rv_autokal/build/armor_tracker' returned '2': AMENT_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/coffee/rv_autokal/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/coffee/rv_autokal/build/armor_tracker -- -j32 -l32

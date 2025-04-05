@@ -1,5 +1,4 @@
 /home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/urdf/rm_gimbal.urdf.xacro
-/home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/urdf/rm_gimbal.urdf.xacro:Zone.Identifier
 /home/coffee/rv_autokal/install/rm_gimbal_description/share/ament_index/resource_index/package_run_dependencies/rm_gimbal_description
 /home/coffee/rv_autokal/install/rm_gimbal_description/share/ament_index/resource_index/parent_prefix_path/rm_gimbal_description
 /home/coffee/rv_autokal/install/rm_gimbal_description/share/rm_gimbal_description/environment/ament_prefix_path.sh
