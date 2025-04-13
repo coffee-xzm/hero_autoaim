@@ -1,0 +1,6 @@
+/home/wdr/ros_ws/install/rm_utils/lib/librm_utils.so
+/home/wdr/ros_ws/install/rm_utils/lib/libfytlogger.so
+/home/wdr/ros_ws/install/rm_utils/share/rm_utils/cmake/rm_utilsExport.cmake
+/home/wdr/ros_ws/install/rm_utils/share/rm_utils/cmake/rm_utilsExport-noconfig.cmake
+/home/wdr/ros_ws/install/rm_utils/share/rm_utils/cmake/fytloggerExport.cmake
+/home/wdr/ros_ws/install/rm_utils/share/rm_utils/cmake/fytloggerExport-noconfig.cmake

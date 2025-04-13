@@ -915,6 +915,7 @@ CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o
  /usr/include/opencv4/opencv2/video.hpp
  /usr/include/opencv4/opencv2/video/tracking.hpp
  /usr/include/opencv4/opencv2/video/background_segm.hpp
+ /home/wdr/ros_ws/src/rm_auto_aim/armor_detector/include/armor_detector/light_corner_corrector.hpp
  /home/wdr/ros_ws/build/auto_aim_interfaces/rosidl_generator_cpp/auto_aim_interfaces/msg/debug_armors.hpp
  /home/wdr/ros_ws/build/auto_aim_interfaces/rosidl_generator_cpp/auto_aim_interfaces/msg/detail/debug_armors__struct.hpp
  /home/wdr/ros_ws/build/auto_aim_interfaces/rosidl_generator_cpp/auto_aim_interfaces/msg/detail/debug_armor__struct.hpp

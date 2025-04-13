@@ -1,0 +1,6 @@
+Invoking command in '/home/wdr/ros_ws/build/rm_utils': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/wdr/ros_ws/src/rm_utils -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wdr/ros_ws/install/rm_utils
+Invoked command in '/home/wdr/ros_ws/build/rm_utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/wdr/ros_ws/src/rm_utils -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wdr/ros_ws/install/rm_utils
+Invoking command in '/home/wdr/ros_ws/build/rm_utils': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/wdr/ros_ws/build/rm_utils -- -j8 -l8
+Invoked command in '/home/wdr/ros_ws/build/rm_utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/wdr/ros_ws/build/rm_utils -- -j8 -l8
+Invoking command in '/home/wdr/ros_ws/build/rm_utils': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/wdr/ros_ws/build/rm_utils
+Invoked command in '/home/wdr/ros_ws/build/rm_utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/wdr/ros_ws/build/rm_utils

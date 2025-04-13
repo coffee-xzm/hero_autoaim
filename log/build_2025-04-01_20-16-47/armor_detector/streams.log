@@ -1,0 +1,50 @@
+[0.008s] Invoking command in '/home/wdr/ros_ws/build/armor_detector': AMENT_PREFIX_PATH=/home/wdr/ros_ws/install/rm_utils:/home/wdr/ros_ws/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wdr/ros_ws/install/rm_utils:/home/wdr/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/wdr/ros_ws/install/rm_utils/lib:/home/wdr/ros_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/wdr/ros_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/wdr/ros_ws/build/armor_detector -- -j8 -l8
+[0.031s] [ 12%] Built target gtest_main
+[0.031s] [ 25%] Built target gtest
+[0.032s] [ 37%] Built target armor_detector_node
+[0.039s] [ 43%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector.cpp.o[0m
+[0.040s] [ 50%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector_node.cpp.o[0m
+[12.880s] [ 56%] [32m[1mLinking CXX shared library libarmor_detector.so[0m
+[13.820s] [ 75%] Built target armor_detector
+[13.830s] [ 81%] [32m[1mLinking CXX executable test_number_cls[0m
+[13.833s] [ 87%] [32mBuilding CXX object CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o[0m
+[14.801s] [ 93%] Built target test_number_cls
+[18.099s] [100%] [32m[1mLinking CXX executable test_node_startup[0m
+[18.724s] [100%] Built target test_node_startup
+[18.728s] Invoked command in '/home/wdr/ros_ws/build/armor_detector' returned '0': AMENT_PREFIX_PATH=/home/wdr/ros_ws/install/rm_utils:/home/wdr/ros_ws/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wdr/ros_ws/install/rm_utils:/home/wdr/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/wdr/ros_ws/install/rm_utils/lib:/home/wdr/ros_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/wdr/ros_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/wdr/ros_ws/build/armor_detector -- -j8 -l8
+[18.729s] Invoking command in '/home/wdr/ros_ws/build/armor_detector': AMENT_PREFIX_PATH=/home/wdr/ros_ws/install/rm_utils:/home/wdr/ros_ws/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wdr/ros_ws/install/rm_utils:/home/wdr/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/wdr/ros_ws/install/rm_utils/lib:/home/wdr/ros_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/wdr/ros_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/wdr/ros_ws/build/armor_detector
+[18.730s] -- Install configuration: ""
+[18.731s] -- Execute custom install script
+[18.731s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/lib/armor_detector/armor_detector_node
+[18.731s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/include/armor_detector/armor.hpp
+[18.731s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/include/armor_detector/detector.hpp
+[18.731s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/include/armor_detector/detector_node.hpp
+[18.731s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/include/armor_detector/light_corner_corrector.hpp
+[18.731s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/include/armor_detector/number_classifier.hpp
+[18.731s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/include/armor_detector/pnp_solver.hpp
+[18.731s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/include/armor_detector/types.hpp
+[18.731s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/environment/library_path.sh
+[18.731s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/environment/library_path.dsv
+[18.732s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/lib/libarmor_detector.so
+[18.732s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/model/label.txt
+[18.732s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/model/mlp.onnx
+[18.732s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/ament_index/resource_index/package_run_dependencies/armor_detector
+[18.732s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/ament_index/resource_index/parent_prefix_path/armor_detector
+[18.732s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/environment/ament_prefix_path.sh
+[18.732s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/environment/ament_prefix_path.dsv
+[18.732s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/environment/path.sh
+[18.732s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/environment/path.dsv
+[18.732s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/local_setup.bash
+[18.733s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/local_setup.sh
+[18.733s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/local_setup.zsh
+[18.733s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/local_setup.dsv
+[18.733s] -- Symlinking: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/package.dsv
+[18.734s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/ament_index/resource_index/packages/armor_detector
+[18.734s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/ament_index/resource_index/rclcpp_components/armor_detector
+[18.734s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.734s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.734s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/cmake/ament_cmake_export_libraries-extras.cmake
+[18.735s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/cmake/armor_detectorConfig.cmake
+[18.735s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/cmake/armor_detectorConfig-version.cmake
+[18.735s] -- Up-to-date symlink: /home/wdr/ros_ws/install/armor_detector/share/armor_detector/package.xml
+[18.736s] Invoked command in '/home/wdr/ros_ws/build/armor_detector' returned '0': AMENT_PREFIX_PATH=/home/wdr/ros_ws/install/rm_utils:/home/wdr/ros_ws/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wdr/ros_ws/install/rm_utils:/home/wdr/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/wdr/ros_ws/install/rm_utils/lib:/home/wdr/ros_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/wdr/ros_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/wdr/ros_ws/build/armor_detector

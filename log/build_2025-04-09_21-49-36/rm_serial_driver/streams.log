@@ -1,0 +1,38 @@
+[0.008s] Invoking command in '/home/wdr/ros_ws/build/rm_serial_driver': AMENT_PREFIX_PATH=/home/wdr/ros_ws/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wdr/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/wdr/ros_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/wdr/ros_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/wdr/ros_ws/build/rm_serial_driver -- -j8 -l8
+[0.026s] [ 40%] Built target rm_serial_driver_node
+[0.036s] [ 60%] [32mBuilding CXX object CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o[0m
+[8.475s] [ 80%] [32m[1mLinking CXX shared library librm_serial_driver.so[0m
+[8.983s] [100%] Built target rm_serial_driver
+[8.986s] Invoked command in '/home/wdr/ros_ws/build/rm_serial_driver' returned '0': AMENT_PREFIX_PATH=/home/wdr/ros_ws/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wdr/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/wdr/ros_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/wdr/ros_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/wdr/ros_ws/build/rm_serial_driver -- -j8 -l8
+[8.987s] Invoking command in '/home/wdr/ros_ws/build/rm_serial_driver': AMENT_PREFIX_PATH=/home/wdr/ros_ws/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wdr/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/wdr/ros_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/wdr/ros_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/wdr/ros_ws/build/rm_serial_driver
+[8.988s] -- Install configuration: ""
+[8.989s] -- Execute custom install script
+[8.989s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/lib/rm_serial_driver/rm_serial_driver_node
+[8.990s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/include/rm_serial_driver/crc.hpp
+[8.990s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/include/rm_serial_driver/packet.hpp
+[8.990s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/include/rm_serial_driver/rm_serial_driver.hpp
+[8.990s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/environment/library_path.sh
+[8.990s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/environment/library_path.dsv
+[8.990s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/lib/librm_serial_driver.so
+[8.991s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/config/serial_driver.yaml
+[8.991s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/launch/serial_driver.launch.py
+[8.991s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/ament_index/resource_index/package_run_dependencies/rm_serial_driver
+[8.991s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/ament_index/resource_index/parent_prefix_path/rm_serial_driver
+[8.992s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/environment/ament_prefix_path.sh
+[8.992s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/environment/ament_prefix_path.dsv
+[8.992s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/environment/path.sh
+[8.992s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/environment/path.dsv
+[8.992s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/local_setup.bash
+[8.992s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/local_setup.sh
+[8.992s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/local_setup.zsh
+[8.992s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/local_setup.dsv
+[8.992s] -- Symlinking: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/package.dsv
+[8.994s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/ament_index/resource_index/packages/rm_serial_driver
+[8.994s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/ament_index/resource_index/rclcpp_components/rm_serial_driver
+[8.994s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.994s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.994s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[8.994s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/cmake/rm_serial_driverConfig.cmake
+[8.994s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/cmake/rm_serial_driverConfig-version.cmake
+[8.995s] -- Up-to-date symlink: /home/wdr/ros_ws/install/rm_serial_driver/share/rm_serial_driver/package.xml
+[8.996s] Invoked command in '/home/wdr/ros_ws/build/rm_serial_driver' returned '0': AMENT_PREFIX_PATH=/home/wdr/ros_ws/install/auto_aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wdr/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/wdr/ros_ws/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/wdr/ros_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/wdr/ros_ws/build/rm_serial_driver

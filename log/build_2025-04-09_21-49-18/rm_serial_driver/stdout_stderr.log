@@ -1,0 +1,12 @@
+[ 40%] Built target rm_serial_driver_node
+[ 60%] [32mBuilding CXX object CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o[0m
+[01m[K/home/wdr/ros_ws/src/rm_serial_driver/src/rm_serial_driver.cpp:[m[K In member function ‘[01m[Kvoid rm_serial_driver::RMSerialDriver::sendData(auto_aim_interfaces::msg::Target_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wdr/ros_ws/src/rm_serial_driver/src/rm_serial_driver.cpp:186:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kpacket[m[K’
+  186 |     packet.v_yaw = 2.512[01;31m[K/[m[K/msg->v_yaw;
+      |                         [01;31m[K^[m[K
+      |                         [32m[K;[m[K
+  187 |     [32m[Kpacket[m[K.r1 = msg->radius_1;
+      |     [32m[K~~~~~~[m[K               
+gmake[2]: *** [CMakeFiles/rm_serial_driver.dir/build.make:76：CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/rm_serial_driver.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -2,8 +2,10 @@
 /home/wdr/ros_ws/install/armor_detector/include/armor_detector/armor.hpp
 /home/wdr/ros_ws/install/armor_detector/include/armor_detector/detector.hpp
 /home/wdr/ros_ws/install/armor_detector/include/armor_detector/detector_node.hpp
+/home/wdr/ros_ws/install/armor_detector/include/armor_detector/light_corner_corrector.hpp
 /home/wdr/ros_ws/install/armor_detector/include/armor_detector/number_classifier.hpp
 /home/wdr/ros_ws/install/armor_detector/include/armor_detector/pnp_solver.hpp
+/home/wdr/ros_ws/install/armor_detector/include/armor_detector/types.hpp
 /home/wdr/ros_ws/install/armor_detector/share/armor_detector/environment/library_path.sh
 /home/wdr/ros_ws/install/armor_detector/share/armor_detector/environment/library_path.dsv
 /home/wdr/ros_ws/install/armor_detector/lib/libarmor_detector.so

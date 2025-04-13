@@ -347,6 +347,30 @@ src/detector_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/armor_detector.dir/build.make CMakeFiles/armor_detector.dir/src/detector_node.cpp.s
 .PHONY : src/detector_node.cpp.s
 
+src/light_corner_corrector.o: src/light_corner_corrector.cpp.o
+.PHONY : src/light_corner_corrector.o
+
+# target to build an object file
+src/light_corner_corrector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/armor_detector.dir/build.make CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.o
+.PHONY : src/light_corner_corrector.cpp.o
+
+src/light_corner_corrector.i: src/light_corner_corrector.cpp.i
+.PHONY : src/light_corner_corrector.i
+
+# target to preprocess a source file
+src/light_corner_corrector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/armor_detector.dir/build.make CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.i
+.PHONY : src/light_corner_corrector.cpp.i
+
+src/light_corner_corrector.s: src/light_corner_corrector.cpp.s
+.PHONY : src/light_corner_corrector.s
+
+# target to generate assembly for a file
+src/light_corner_corrector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/armor_detector.dir/build.make CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.s
+.PHONY : src/light_corner_corrector.cpp.s
+
 src/number_classifier.o: src/number_classifier.cpp.o
 .PHONY : src/number_classifier.o
 
@@ -473,6 +497,9 @@ help:
 	@echo "... src/detector_node.o"
 	@echo "... src/detector_node.i"
 	@echo "... src/detector_node.s"
+	@echo "... src/light_corner_corrector.o"
+	@echo "... src/light_corner_corrector.i"
+	@echo "... src/light_corner_corrector.s"
 	@echo "... src/number_classifier.o"
 	@echo "... src/number_classifier.i"
 	@echo "... src/number_classifier.s"

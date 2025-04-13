@@ -97,10 +97,24 @@ CMakeFiles/armor_detector.dir/src/detector_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor_detector.dir/src/detector_node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wdr/ros_ws/src/rm_auto_aim/armor_detector/src/detector_node.cpp -o CMakeFiles/armor_detector.dir/src/detector_node.cpp.s
 
+CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.o: CMakeFiles/armor_detector.dir/flags.make
+CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.o: /home/wdr/ros_ws/src/rm_auto_aim/armor_detector/src/light_corner_corrector.cpp
+CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.o: CMakeFiles/armor_detector.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wdr/ros_ws/build/armor_detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.o -MF CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.o.d -o CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.o -c /home/wdr/ros_ws/src/rm_auto_aim/armor_detector/src/light_corner_corrector.cpp
+
+CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wdr/ros_ws/src/rm_auto_aim/armor_detector/src/light_corner_corrector.cpp > CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.i
+
+CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wdr/ros_ws/src/rm_auto_aim/armor_detector/src/light_corner_corrector.cpp -o CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.s
+
 CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o: CMakeFiles/armor_detector.dir/flags.make
 CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o: /home/wdr/ros_ws/src/rm_auto_aim/armor_detector/src/number_classifier.cpp
 CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o: CMakeFiles/armor_detector.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wdr/ros_ws/build/armor_detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wdr/ros_ws/build/armor_detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o -MF CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o.d -o CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o -c /home/wdr/ros_ws/src/rm_auto_aim/armor_detector/src/number_classifier.cpp
 
 CMakeFiles/armor_detector.dir/src/number_classifier.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/armor_detector.dir/src/number_classifier.cpp.s: cmake_force
 CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.o: CMakeFiles/armor_detector.dir/flags.make
 CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.o: /home/wdr/ros_ws/src/rm_auto_aim/armor_detector/src/pnp_solver.cpp
 CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.o: CMakeFiles/armor_detector.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wdr/ros_ws/build/armor_detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wdr/ros_ws/build/armor_detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.o -MF CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.o.d -o CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.o -c /home/wdr/ros_ws/src/rm_auto_aim/armor_detector/src/pnp_solver.cpp
 
 CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.i: cmake_force
@@ -129,6 +143,7 @@ CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.s: cmake_force
 armor_detector_OBJECTS = \
 "CMakeFiles/armor_detector.dir/src/detector.cpp.o" \
 "CMakeFiles/armor_detector.dir/src/detector_node.cpp.o" \
+"CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.o" \
 "CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o" \
 "CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.o"
 
@@ -137,6 +152,7 @@ armor_detector_EXTERNAL_OBJECTS =
 
 libarmor_detector.so: CMakeFiles/armor_detector.dir/src/detector.cpp.o
 libarmor_detector.so: CMakeFiles/armor_detector.dir/src/detector_node.cpp.o
+libarmor_detector.so: CMakeFiles/armor_detector.dir/src/light_corner_corrector.cpp.o
 libarmor_detector.so: CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o
 libarmor_detector.so: CMakeFiles/armor_detector.dir/src/pnp_solver.cpp.o
 libarmor_detector.so: CMakeFiles/armor_detector.dir/build.make
@@ -155,6 +171,8 @@ libarmor_detector.so: /home/wdr/ros_ws/install/auto_aim_interfaces/lib/libauto_a
 libarmor_detector.so: /home/wdr/ros_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_introspection_cpp.so
 libarmor_detector.so: /home/wdr/ros_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_typesupport_cpp.so
 libarmor_detector.so: /home/wdr/ros_ws/install/auto_aim_interfaces/lib/libauto_aim_interfaces__rosidl_generator_py.so
+libarmor_detector.so: /home/wdr/ros_ws/install/rm_utils/lib/librm_utils.so
+libarmor_detector.so: /home/wdr/ros_ws/install/rm_utils/lib/libfytlogger.so
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d
@@ -217,8 +235,48 @@ libarmor_detector.so: /opt/ros/humble/lib/libmessage_filters.so
 libarmor_detector.so: /opt/ros/humble/lib/libtf2.so
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
 libarmor_detector.so: /opt/ros/humble/lib/librclcpp_action.so
+libarmor_detector.so: /opt/ros/humble/lib/librcl_action.so
+libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_c.so
+libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
+libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
+libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so
+libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
+libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
+libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so
+libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
+libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
+libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
+libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
+libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
+libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_cpp.so
+libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
+libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
+libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_py.so
+libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_c.so
+libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_c.so
+libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
+libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
+libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
+libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
+libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
+libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 libarmor_detector.so: /opt/ros/humble/lib/librclcpp.so
 libarmor_detector.so: /opt/ros/humble/lib/liblibstatistics_collector.so
+libarmor_detector.so: /opt/ros/humble/lib/librcl.so
+libarmor_detector.so: /opt/ros/humble/lib/librmw_implementation.so
+libarmor_detector.so: /opt/ros/humble/lib/libament_index_cpp.so
+libarmor_detector.so: /opt/ros/humble/lib/librcl_logging_spdlog.so
+libarmor_detector.so: /opt/ros/humble/lib/librcl_logging_interface.so
+libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
+libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
+libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
+libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
+libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
+libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
+libarmor_detector.so: /opt/ros/humble/lib/librcl_yaml_param_parser.so
+libarmor_detector.so: /opt/ros/humble/lib/libyaml.so
 libarmor_detector.so: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
 libarmor_detector.so: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
@@ -235,93 +293,51 @@ libarmor_detector.so: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport
 libarmor_detector.so: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
 libarmor_detector.so: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 libarmor_detector.so: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
-libarmor_detector.so: /opt/ros/humble/lib/librcl_action.so
-libarmor_detector.so: /opt/ros/humble/lib/librcl.so
-libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
-libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
-libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
-libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
-libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
-libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
-libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
-libarmor_detector.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
-libarmor_detector.so: /opt/ros/humble/lib/librcl_yaml_param_parser.so
-libarmor_detector.so: /opt/ros/humble/lib/libyaml.so
 libarmor_detector.so: /opt/ros/humble/lib/libtracetools.so
-libarmor_detector.so: /opt/ros/humble/lib/librmw_implementation.so
-libarmor_detector.so: /opt/ros/humble/lib/libament_index_cpp.so
-libarmor_detector.so: /opt/ros/humble/lib/librcl_logging_spdlog.so
-libarmor_detector.so: /opt/ros/humble/lib/librcl_logging_interface.so
-libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_c.so
 libarmor_detector.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 libarmor_detector.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
-libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
 libarmor_detector.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
-libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
 libarmor_detector.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
-libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so
 libarmor_detector.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 libarmor_detector.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
 libarmor_detector.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
-libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
-libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
-libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
-libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 libarmor_detector.so: /opt/ros/humble/lib/librmw.so
-libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
-libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
-libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
-libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
-libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
 libarmor_detector.so: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_py.so
 libarmor_detector.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
-libarmor_detector.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_c.so
 libarmor_detector.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
-libarmor_detector.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-libarmor_detector.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_c.so
 libarmor_detector.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
-libarmor_detector.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
-libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
+libarmor_detector.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 libarmor_detector.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
-libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
+libarmor_detector.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 libarmor_detector.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
-libarmor_detector.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
+libarmor_detector.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 libarmor_detector.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
-libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
-libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
-libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 libarmor_detector.so: /opt/ros/humble/lib/librosidl_typesupport_c.so
-libarmor_detector.so: /opt/ros/humble/lib/librcpputils.so
-libarmor_detector.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 libarmor_detector.so: /opt/ros/humble/lib/librosidl_runtime_c.so
-libarmor_detector.so: /opt/ros/humble/lib/librcutils.so
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d
-libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d
-libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d
-libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d
@@ -331,8 +347,27 @@ libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
 libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+libarmor_detector.so: /opt/ros/humble/lib/librcpputils.so
+libarmor_detector.so: /opt/ros/humble/lib/librcutils.so
+libarmor_detector.so: /usr/local/lib/libceres.a
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libglog.so.0.4.0
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libunwind.so
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libspqr.so
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libcholmod.so
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libamd.so
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libcamd.so
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libccolamd.so
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libcolamd.so
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libtbb.so.12.5
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/liblapack.so
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libblas.so
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libf77blas.so
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libatlas.so
+libarmor_detector.so: /usr/lib/x86_64-linux-gnu/libfmt.so.8.1.1
 libarmor_detector.so: CMakeFiles/armor_detector.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wdr/ros_ws/build/armor_detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libarmor_detector.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wdr/ros_ws/build/armor_detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libarmor_detector.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/armor_detector.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
