@@ -1,0 +1,62 @@
+/camera_node:
+  ros__parameters:
+    camera_info_url: package://rm_vision_bringup/config/camera_info.yaml
+    exposure_time: 2300
+    gain: 12.0
+
+/serial_driver:
+  ros__parameters:
+    timestamp_offset: 0.0048 #0.006 0.0048
+    device_name: /dev/ttyACM0
+    baud_rate: 115200
+    flow_control: none
+    parity: none
+    stop_bits: "1"
+
+/armor_detector:
+  ros__parameters:
+    debug: true
+
+    detect_color: 0
+    binary_thres: 72
+    target_gray_number_value: 10.0
+    target_gray_light_value: 180.0
+
+    light.min_ratio: 0.07
+    light.max_ratio: 0.4
+    light.max_angle: 20.0
+
+    armor.min_light_ratio: 0.8
+    armor.max_angle: 30.0
+    light.min_fill_ratio: 0.5 #灯条需要满足在旋转矩形中占比大于一个阈值
+    
+    classifier_threshold: 0.8
+    ignore_classes: ["negative"]
+    
+    target_brightness_global: 20.0
+    target_brightness_armor:  70.0
+    Kp: 0.035
+    Ki: 0.0
+    Kd: 0.005
+    Use_AAG: false
+    is_using_pca: false
+
+/armor_tracker:
+  ros__parameters:
+    target_frame: odom
+    max_armor_distance: 10.0
+
+    ekf:
+      sigma2_q_xyz: 0.025 #0.032
+      sigma2_q_yaw: 3.0 #5.0
+      sigma2_q_r: 10.0 #80.0
+
+      r_xyz_factor: 4e-4 #0.000197
+      r_yaw: 5e-3 #5e-3   算出0.07987
+
+    tracker:
+      max_match_distance: 0.5 #0.5
+      max_match_yaw_diff: 1.0 #1.0
+
+      tracking_thres: 5
+      lost_time_thres: 1.0
