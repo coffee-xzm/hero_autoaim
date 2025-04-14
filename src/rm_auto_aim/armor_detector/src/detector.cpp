@@ -102,7 +102,7 @@ std::vector<Light> Detector::findLights(const cv::Mat & rbg_img, const cv::Mat &
     light.tilt_angle=angle_k;
 
     //if (isLight(light)) {
-    if (isLight(light) && is_fill_rotated_rect) {
+     if (isLight(light) && is_fill_rotated_rect) {
       //auto b_rect = light.boundingRect();
       if (  
         //初始通过颜色再筛选

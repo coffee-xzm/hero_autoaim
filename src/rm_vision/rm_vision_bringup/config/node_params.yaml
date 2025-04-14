@@ -23,7 +23,7 @@
     light.min_ratio: 0.1
     armor.min_light_ratio: 0.8
 
-    light.min_fill_ratio: 0.8
+    light.min_fill_ratio: 0.7
 
     classifier_threshold: 0.8
     ignore_classes: ["negative"]

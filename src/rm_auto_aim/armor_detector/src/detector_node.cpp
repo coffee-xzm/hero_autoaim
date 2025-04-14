@@ -174,6 +174,7 @@ std::unique_ptr<Detector> ArmorDetectorNode::initDetector()
     .min_ratio = declare_parameter("light.min_ratio", 0.1),
     .max_ratio = declare_parameter("light.max_ratio", 0.4),
     .max_angle = declare_parameter("light.max_angle", 40.0),
+    //.max_angle = declare_parameter("light.max_angle", 40.0)};
     .min_fill_ratio = declare_parameter("light.min_fill_ratio", 0.8)};
 
   Detector::ArmorParams a_params = {
