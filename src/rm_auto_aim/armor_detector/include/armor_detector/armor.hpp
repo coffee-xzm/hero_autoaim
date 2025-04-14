@@ -36,6 +36,8 @@ struct Light : public cv::RotatedRect
     tilt_angle = tilt_angle / CV_PI * 180;
   }
 
+  cv::Point2f center;
+  
   int color;
   cv::Point2f top, bottom;
   double length;

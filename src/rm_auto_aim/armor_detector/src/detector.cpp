@@ -77,8 +77,8 @@ std::vector<Light> Detector::findLights(const cv::Mat & rbg_img, const cv::Mat &
     std::vector<cv::Point> points;
     cv::findNonZero(mask, points);
     // points / rotated rect area
-    // bool is_fill_rotated_rect =
-    //   points.size() / (r_rect.size.width * r_rect.size.height) > l.min_fill_ratio;
+    bool is_fill_rotated_rect =
+      points.size() / (r_rect.size.width * r_rect.size.height) > l.min_fill_ratio;
     cv::Vec4f return_param;
     cv::fitLine(points, return_param, cv::DIST_L2, 0, 0.01, 0.01);
     cv::Point2f top, bottom;
@@ -101,8 +101,8 @@ std::vector<Light> Detector::findLights(const cv::Mat & rbg_img, const cv::Mat &
     light.bottom=bottom;
     light.tilt_angle=angle_k;
 
-
-    if (isLight(light)) {
+    //if (isLight(light)) {
+    if (isLight(light) && is_fill_rotated_rect) {
       //auto b_rect = light.boundingRect();
       if (  
         //初始通过颜色再筛选

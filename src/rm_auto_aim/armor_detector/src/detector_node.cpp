@@ -173,7 +173,8 @@ std::unique_ptr<Detector> ArmorDetectorNode::initDetector()
   Detector::LightParams l_params = {
     .min_ratio = declare_parameter("light.min_ratio", 0.1),
     .max_ratio = declare_parameter("light.max_ratio", 0.4),
-    .max_angle = declare_parameter("light.max_angle", 40.0)};
+    .max_angle = declare_parameter("light.max_angle", 40.0),
+    .min_fill_ratio = declare_parameter("light.min_fill_ratio", 0.8)};
 
   Detector::ArmorParams a_params = {
     .min_light_ratio = declare_parameter("armor.min_light_ratio", 0.7),
@@ -274,7 +275,7 @@ std::vector<Armor> ArmorDetectorNode::detectArmors(
         
         // 绘制投影点和连线
         for (int i = 0; i < 4; i++) {
-          cv::circle(img, projected_points[i], 5, cv::Scalar(255,0,0),1);
+          cv::circle(img, projected_points[i], 2, cv::Scalar(255,0,0),1);
           // cv::line(img, projected_points[i], projected_points[(i+1)%4], 
           //         cv::Scalar(0, 255, 255), 2);
         }
