@@ -74,6 +74,9 @@ private:
   image_transport::Publisher binary_img_pub_;
   image_transport::Publisher number_img_pub_;
   image_transport::Publisher result_img_pub_;
+
+  //add
+  double err1,err2;
 };
 
 }  // namespace rm_auto_aim

@@ -113,7 +113,7 @@ void ArmorDetectorNode::imageCallback(const sensor_msgs::msg::Image::ConstShared
 
         // Fill pose
         // armor_msg.pose.position.x = tvec.at<double>(0);
-        double err = 0.3 - (armor.left_light.tilt_angle+armor.right_light.tilt_angle)/2*10;
+        double err = err1 - (armor.left_light.tilt_angle+armor.right_light.tilt_angle)/2*err2;
         RCLCPP_INFO(get_logger(), "err = %f",err);
         armor_msg.pose.position.x = tvec.at<double>(0)+err;
         armor_msg.pose.position.y = tvec.at<double>(1);
@@ -161,6 +161,9 @@ void ArmorDetectorNode::imageCallback(const sensor_msgs::msg::Image::ConstShared
 
 std::unique_ptr<Detector> ArmorDetectorNode::initDetector()
 {
+  //add armor_x_err relevent
+  err1=declare_parameter("err1", 0.1);
+  err2=declare_parameter("err2", 0.1);
   rcl_interfaces::msg::ParameterDescriptor param_desc;
   param_desc.integer_range.resize(1);
   param_desc.integer_range[0].step = 1;
