@@ -48,4 +48,10 @@ Eigen::MatrixXd ExtendedKalmanFilter::update(const Eigen::VectorXd & z)
   return x_post;
 }
 
+//add
+void ExtendedKalmanFilter::update_tmp(const std::function<Eigen::MatrixXd()> & z)
+{
+  update_Q = z;
+}
+
 }  // namespace rm_auto_aim

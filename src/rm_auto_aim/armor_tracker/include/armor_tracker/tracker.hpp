@@ -62,6 +62,9 @@ public:
   // To store another pair of armors message
   double dz, another_r;
 
+  //add
+  double dt1, s2qxyz_1, s2qyaw_1, s2qr_1;
+
 private:
   void initEKF(const Armor & a);
 

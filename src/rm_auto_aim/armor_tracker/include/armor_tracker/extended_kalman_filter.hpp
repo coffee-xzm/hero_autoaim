@@ -31,6 +31,9 @@ public:
   // Update the estimated state based on measurement
   Eigen::MatrixXd update(const Eigen::VectorXd & z);
 
+  //add
+  void update_tmp(const std::function<Eigen::MatrixXd()> & z);
+
 private:
   // Process nonlinear vector function
   VecVecFunc f;

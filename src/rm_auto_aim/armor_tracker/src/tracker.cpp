@@ -99,6 +99,30 @@ void Tracker::update(const Armors::SharedPtr & armors_msg)
       // Update EKF
       double measured_yaw = orientationToYaw(tracked_armor.pose.orientation);
       measurement = Eigen::Vector4d(p.x, p.y, p.z, measured_yaw);
+
+      //add_auto_kal
+      auto u_q = [this]() {
+        Eigen::MatrixXd q(9, 9);
+        double t = dt1, x = s2qxyz_1, y = s2qyaw_1, r = s2qr_1;
+        double q_x_x = pow(t, 4) / 4 * x, q_x_vx = pow(t, 3) / 2 * x, q_vx_vx = pow(t, 2) * x;
+        double q_y_y = pow(t, 4) / 4 * y, q_y_vy = pow(t, 3) / 2 * x, q_vy_vy = pow(t, 2) * y;
+        double q_r = pow(t, 4) / 4 * r;
+        // clang-format off
+        //    xc      v_xc    yc      v_yc    za      v_za    yaw     v_yaw   r
+        q <<  q_x_x,  q_x_vx, 0,      0,      0,      0,      0,      0,      0,
+              q_x_vx, q_vx_vx,0,      0,      0,      0,      0,      0,      0,
+              0,      0,      q_x_x,  q_x_vx, 0,      0,      0,      0,      0,
+              0,      0,      q_x_vx, q_vx_vx,0,      0,      0,      0,      0,
+              0,      0,      0,      0,      q_x_x,  q_x_vx, 0,      0,      0,
+              0,      0,      0,      0,      q_x_vx, q_vx_vx,0,      0,      0,
+              0,      0,      0,      0,      0,      0,      q_y_y,  q_y_vy, 0,
+              0,      0,      0,      0,      0,      0,      q_y_vy, q_vy_vy,0,
+              0,      0,      0,      0,      0,      0,      0,      0,      q_r;
+        // clang-format on
+        return q;
+      };
+      ekf.update_tmp(u_q);
+
       target_state = ekf.update(measurement);
       RCLCPP_DEBUG(rclcpp::get_logger("armor_tracker"), "EKF update");
     } else if (same_id_armors_count == 1 && yaw_diff > max_match_yaw_diff_) {

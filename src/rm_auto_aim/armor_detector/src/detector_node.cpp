@@ -115,10 +115,10 @@ void ArmorDetectorNode::imageCallback(const sensor_msgs::msg::Image::ConstShared
         armor_msg.pose.position.x = tvec.at<double>(0);
         // double err = err1 - (armor.left_light.tilt_angle+armor.right_light.tilt_angle)/2*err2;
         // RCLCPP_INFO(get_logger(), "err = %f",err);
-        RCLCPP_INFO(get_logger(), "tilt = %f",armor.left_light.tilt_angle+armor.right_light.tilt_angle)/2);
-        armor_msg.pose.position.z = tvec.at<double>(2)+err;
+        //RCLCPP_INFO(get_logger(), "tilt = %f",armor.left_light.tilt_angle+armor.right_light.tilt_angle)/2);
+        //armor_msg.pose.position.z = tvec.at<double>(2)+err;
         armor_msg.pose.position.y = tvec.at<double>(1);
-        //armor_msg.pose.position.z = tvec.at<double>(2);
+        armor_msg.pose.position.z = tvec.at<double>(2);
         // rvec to 3x3 rotation matrix
         cv::Mat rotation_matrix;
         cv::Rodrigues(rvec, rotation_matrix);
@@ -135,6 +135,8 @@ void ArmorDetectorNode::imageCallback(const sensor_msgs::msg::Image::ConstShared
 
         // Fill the distance to image center
         armor_msg.distance_to_image_center = pnp_solver_->calculateDistanceToCenter(armor.center);
+        //add
+        armor_msg.angle=(float)(armor.left_light.tilt_angle+armor.right_light.tilt_angle)/2;
 
         // Fill the markers
         armor_marker_.id++;

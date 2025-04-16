@@ -220,6 +220,7 @@ void ArmorTrackerNode::armorsCallback(const auto_aim_interfaces::msg::Armors::Sh
     target_msg.tracking = false;
   } else {
     dt_ = (time - last_time_).seconds();
+    tracker_->dt1 = dt_;
     tracker_->lost_thres = static_cast<int>(lost_time_thres_ / dt_);
     tracker_->update(armors_msg);
 
