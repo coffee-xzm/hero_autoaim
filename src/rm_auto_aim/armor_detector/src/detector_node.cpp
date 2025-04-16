@@ -112,12 +112,12 @@ void ArmorDetectorNode::imageCallback(const sensor_msgs::msg::Image::ConstShared
         armor_msg.number = armor.number;
 
         // Fill pose
-         armor_msg.pose.position.x = tvec.at<double>(0);
-        // double err = err1 - (armor.left_light.tilt_angle+armor.right_light.tilt_angle)/2*err2;
-        // RCLCPP_INFO(get_logger(), "err = %f",err);
-        // armor_msg.pose.position.x = tvec.at<double>(0)+err;
+        armor_msg.pose.position.x = tvec.at<double>(0);
+        double err = err1 - (armor.left_light.tilt_angle+armor.right_light.tilt_angle)/2*err2;
+        RCLCPP_INFO(get_logger(), "err = %f",err);
+        armor_msg.pose.position.z = tvec.at<double>(2)+err;
         armor_msg.pose.position.y = tvec.at<double>(1);
-        armor_msg.pose.position.z = tvec.at<double>(2);
+        //armor_msg.pose.position.z = tvec.at<double>(2);
         // rvec to 3x3 rotation matrix
         cv::Mat rotation_matrix;
         cv::Rodrigues(rvec, rotation_matrix);
