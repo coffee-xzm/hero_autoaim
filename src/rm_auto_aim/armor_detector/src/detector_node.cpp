@@ -112,10 +112,10 @@ void ArmorDetectorNode::imageCallback(const sensor_msgs::msg::Image::ConstShared
         armor_msg.number = armor.number;
 
         // Fill pose
-        // armor_msg.pose.position.x = tvec.at<double>(0);
-        double err = err1 - (armor.left_light.tilt_angle+armor.right_light.tilt_angle)/2*err2;
-        RCLCPP_INFO(get_logger(), "err = %f",err);
-        armor_msg.pose.position.x = tvec.at<double>(0)+err;
+         armor_msg.pose.position.x = tvec.at<double>(0);
+        // double err = err1 - (armor.left_light.tilt_angle+armor.right_light.tilt_angle)/2*err2;
+        // RCLCPP_INFO(get_logger(), "err = %f",err);
+        // armor_msg.pose.position.x = tvec.at<double>(0)+err;
         armor_msg.pose.position.y = tvec.at<double>(1);
         armor_msg.pose.position.z = tvec.at<double>(2);
         // rvec to 3x3 rotation matrix
@@ -179,7 +179,7 @@ std::unique_ptr<Detector> ArmorDetectorNode::initDetector()
   Detector::LightParams l_params = {
     .min_ratio = declare_parameter("light.min_ratio", 0.1),
     .max_ratio = declare_parameter("light.max_ratio", 0.4),
-    .max_angle = declare_parameter("light.max_angle", 40.0),
+    .max_angle = declare_parameter("light.max_angle", 30.0),
     //.max_angle = declare_parameter("light.max_angle", 40.0)};
     .min_fill_ratio = declare_parameter("light.min_fill_ratio", 0.8)};
 
@@ -254,12 +254,12 @@ std::vector<Armor> ArmorDetectorNode::detectArmors(
     for (const auto & armor : armors){
       armor.left_light.points(vertices_light1);
       armor.right_light.points(vertices_light2);
-      for (int i = 0; i < 4; i++) {
-        cv::line(img, vertices_light1[i], vertices_light1[(i+1) % 4], cv::Scalar(0, 255, 0), 2);
-        cv::line(img, vertices_light2[i], vertices_light2[(i+1) % 4], cv::Scalar(0, 255, 0), 2);
-        cv::line(img, vertices_light1[i], vertices_light1[(i+1) % 4], cv::Scalar(0, 255, 0), 2);
-        cv::line(img, vertices_light2[i], vertices_light2[(i+1) % 4], cv::Scalar(0, 255, 0), 2);
-      } 
+      // for (int i = 0; i < 4; i++) {
+      //   cv::line(img, vertices_light1[i], vertices_light1[(i+1) % 4], cv::Scalar(0, 255, 0), 2);
+      //   cv::line(img, vertices_light2[i], vertices_light2[(i+1) % 4], cv::Scalar(0, 255, 0), 2);
+      //   cv::line(img, vertices_light1[i], vertices_light1[(i+1) % 4], cv::Scalar(0, 255, 0), 2);
+      //   cv::line(img, vertices_light2[i], vertices_light2[(i+1) % 4], cv::Scalar(0, 255, 0), 2);
+      // } 
 
       //draw pnp relevent
       cv::Mat rvec, tvec;

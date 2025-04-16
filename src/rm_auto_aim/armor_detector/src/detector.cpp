@@ -145,7 +145,7 @@ bool Detector::isLight(const Light & light)
 
   bool angle_ok = light.tilt_angle < l.max_angle;
 
-  bool is_light = ratio_ok && angle_ok;
+  bool is_light = ratio_ok && angle_ok && light.length > 10 && light.width > 4;
 
   // Fill in debug information
   auto_aim_interfaces::msg::DebugLight light_data;
@@ -266,16 +266,16 @@ void Detector::drawResults(cv::Mat & img)
 {
   // Draw Lights
   for (const auto & light : lights_) {
-    cv::circle(img, light.top, 3, cv::Scalar(255, 255, 255), 1);
-    cv::circle(img, light.bottom, 3, cv::Scalar(255, 255, 255), 1);
+    // cv::circle(img, light.top, 3, cv::Scalar(255, 255, 255), 1);
+    // cv::circle(img, light.bottom, 3, cv::Scalar(255, 255, 255), 1);
     auto line_color = light.color == RED ? cv::Scalar(255, 255, 0) : cv::Scalar(255, 0, 255);
     cv::line(img, light.top, light.bottom, line_color, 1);
   }
 
   // Draw armors
   for (const auto & armor : armors_) {
-    cv::line(img, armor.left_light.top, armor.right_light.bottom, cv::Scalar(0, 255, 0), 2);
-    cv::line(img, armor.left_light.bottom, armor.right_light.top, cv::Scalar(0, 255, 0), 2);
+    cv::line(img, armor.left_light.top, armor.right_light.top, cv::Scalar(0, 255, 0), 2);
+    cv::line(img, armor.left_light.bottom, armor.right_light.bottom, cv::Scalar(0, 255, 0), 2);
   }
 
   // Show numbers and confidence

@@ -20,7 +20,7 @@
     detect_color: 0
     binary_thres: 80
 
-    light.min_ratio: 0.1
+    light.min_ratio: 0.07
     armor.min_light_ratio: 0.8
 
     light.min_fill_ratio: 0.7
