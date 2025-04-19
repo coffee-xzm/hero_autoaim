@@ -40,6 +40,8 @@ public:
 
   int tracking_thres;
   int lost_thres;
+  //add
+  int auto_kal_thres;
 
   enum State {
     LOST,

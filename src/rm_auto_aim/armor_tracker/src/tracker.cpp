@@ -104,7 +104,8 @@ void Tracker::update(const Armors::SharedPtr & armors_msg)
       //add_auto_kal
       auto u_q = [this]() {
         Eigen::MatrixXd q(9, 9);
-        double err = (tracked_armor.angle>-50.0)?std::log(-tracked_armor.angle/7)+5.0:std::log((-tracked_armor.angle+170.0)/7)+5.0;
+        //double err = (tracked_armor.angle>-50.0)?std::log(-tracked_armor.angle/7)+5.0:std::log((-tracked_armor.angle+170.0)/7)+5.0;
+        double err = (tracked_armor.angle>-50.0)?-tracked_armor.angle/1000:(-tracked_armor.angle+170.0)/1000;
         double t = dt1, x = s2qxyz_1*err, y = s2qyaw_1, r = s2qr_1;
         double q_x_x = pow(t, 4) / 4 * x, q_x_vx = pow(t, 3) / 2 * x, q_vx_vx = pow(t, 2) * x;
         double q_y_y = pow(t, 4) / 4 * y, q_y_vy = pow(t, 3) / 2 * x, q_vy_vy = pow(t, 2) * y;
@@ -136,7 +137,9 @@ void Tracker::update(const Armors::SharedPtr & armors_msg)
       RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "No matched armor found!");
     }
   }
-
+  //add
+  auto_kal_thres += std::abs(measured_yaw-target_state(6))>0.1?1:0;
+)
   // Prevent radius from spreading
   if (target_state(8) < 0.12) {
     target_state(8) = 0.12;
@@ -163,6 +166,13 @@ void Tracker::update(const Armors::SharedPtr & armors_msg)
       tracker_state = TEMP_LOST;
       lost_count_++;
     }
+    //add
+    else if(auto_kal_thres>30)
+    {
+      tracker_state = LOST;
+      auto_kal_thres = 0;
+    }
+
   } else if (tracker_state == TEMP_LOST) {
     if (!matched) {
       lost_count_++;
