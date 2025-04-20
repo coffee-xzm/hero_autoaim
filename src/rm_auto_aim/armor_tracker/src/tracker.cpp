@@ -104,13 +104,22 @@ void Tracker::update(const Armors::SharedPtr & armors_msg)
       measurement = Eigen::Vector4d(p.x, p.y, p.z, measured_yaw);
 
       //add_auto_kal
+      // 检查角度并调整s2qxyz_1
+      if (tracker_state == TRACKING) {
+        float armor_angle = tracked_armor.angle;
+        // 判断角度是否接近-0或-90
+        if ((abs(armor_angle) < 0.1) || (abs(armor_angle + 90.0) < 0.1)) {
+          s2qxyz_1 = 0.0; // 将s2qxyz_1设置为0
+          RCLCPP_INFO(rclcpp::get_logger("armor_tracker"), "Armor angle near -0 or -90, set s2qxyz_1 to 0");
+        }
+      }
       auto u_q = [this]() {
         Eigen::MatrixXd q(9, 9);
-        double err = (tracked_armor.angle>-50.0)?-tracked_armor.angle/40:(-tracked_armor.angle+170.0)/40;
+        //double err = (tracked_armor.angle>-50.0)?-tracked_armor.angle/40:(-tracked_armor.angle+170.0)/40;
 
         //angle会变到90附近，需要调整
-        double t = dt1, x = s2qxyz_1+err, y = s2qyaw_1, r = s2qr_1;
-        RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "dt1=%f, s2qxyz_1=%f, err=%f", dt1, s2qxyz_1, err);
+        double t = dt1, x = s2qxyz_1, y = s2qyaw_1, r = s2qr_1;
+        RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "dt1=%f, s2qxyz_1=%f", dt1, s2qxyz_1);
         RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "qxyz_new:%f",x);
         double q_x_x = pow(t, 4) / 4 * x, q_x_vx = pow(t, 3) / 2 * x, q_vx_vx = pow(t, 2) * x;
         double q_y_y = pow(t, 4) / 4 * y, q_y_vy = pow(t, 3) / 2 * x, q_vy_vy = pow(t, 2) * y;

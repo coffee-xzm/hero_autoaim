@@ -38,6 +38,8 @@ private:
 
   void publishMarkers(const auto_aim_interfaces::msg::Target & target_msg);
 
+  ExtendedKalmanFilter createEKF(double current_dt);
+
   // Maximum allowable armor distance in the XOY plane
   double max_armor_distance_;
 

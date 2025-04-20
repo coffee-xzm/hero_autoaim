@@ -22,6 +22,80 @@ ArmorTrackerNode::ArmorTrackerNode(const rclcpp::NodeOptions & options)
   tracker_->tracking_thres = this->declare_parameter("tracker.tracking_thres", 5);
   lost_time_thres_ = this->declare_parameter("tracker.lost_time_thres", 0.3);
 
+  tracker_->ekf = createEKF(dt_);
+
+  // Reset tracker service
+  using std::placeholders::_1;
+  using std::placeholders::_2;
+  using std::placeholders::_3;
+  reset_tracker_srv_ = this->create_service<std_srvs::srv::Trigger>(
+    "/tracker/reset", [this](
+                        const std_srvs::srv::Trigger::Request::SharedPtr,
+                        std_srvs::srv::Trigger::Response::SharedPtr response) {
+      tracker_->tracker_state = Tracker::LOST;
+      response->success = true;
+      RCLCPP_INFO(this->get_logger(), "Tracker reset!");
+      return;
+    });
+
+  // Subscriber with tf2 message_filter
+  // tf2 relevant
+  tf2_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
+  // Create the timer interface before call to waitForTransform,
+  // to avoid a tf2_ros::CreateTimerInterfaceException exception
+  auto timer_interface = std::make_shared<tf2_ros::CreateTimerROS>(
+    this->get_node_base_interface(), this->get_node_timers_interface());
+  tf2_buffer_->setCreateTimerInterface(timer_interface);
+  tf2_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf2_buffer_);
+  // subscriber and filter
+  armors_sub_.subscribe(this, "/detector/armors", rmw_qos_profile_sensor_data);
+  target_frame_ = this->declare_parameter("target_frame", "odom");
+  tf2_filter_ = std::make_shared<tf2_filter>(
+    armors_sub_, *tf2_buffer_, target_frame_, 10, this->get_node_logging_interface(),
+    this->get_node_clock_interface(), std::chrono::duration<int>(1));
+  // Register a callback with tf2_ros::MessageFilter to be called when transforms are available
+  tf2_filter_->registerCallback(&ArmorTrackerNode::armorsCallback, this);
+
+  // Measurement publisher (for debug usage)
+  info_pub_ = this->create_publisher<auto_aim_interfaces::msg::TrackerInfo>("/tracker/info", 10);
+
+  // Publisher
+  target_pub_ = this->create_publisher<auto_aim_interfaces::msg::Target>(
+    "/tracker/target", rclcpp::SensorDataQoS());
+
+  // Visualization Marker Publisher
+  // See http://wiki.ros.org/rviz/DisplayTypes/Marker
+  position_marker_.ns = "position";
+  position_marker_.type = visualization_msgs::msg::Marker::SPHERE;
+  position_marker_.scale.x = position_marker_.scale.y = position_marker_.scale.z = 0.1;
+  position_marker_.color.a = 1.0;
+  position_marker_.color.g = 1.0;
+  linear_v_marker_.type = visualization_msgs::msg::Marker::ARROW;
+  linear_v_marker_.ns = "linear_v";
+  linear_v_marker_.scale.x = 0.03;
+  linear_v_marker_.scale.y = 0.05;
+  linear_v_marker_.color.a = 1.0;
+  linear_v_marker_.color.r = 1.0;
+  linear_v_marker_.color.g = 1.0;
+  angular_v_marker_.type = visualization_msgs::msg::Marker::ARROW;
+  angular_v_marker_.ns = "angular_v";
+  angular_v_marker_.scale.x = 0.03;
+  angular_v_marker_.scale.y = 0.05;
+  angular_v_marker_.color.a = 1.0;
+  angular_v_marker_.color.b = 1.0;
+  angular_v_marker_.color.g = 1.0;
+  armor_marker_.ns = "armors";
+  armor_marker_.type = visualization_msgs::msg::Marker::CUBE;
+  armor_marker_.scale.x = 0.03;
+  armor_marker_.scale.z = 0.125;
+  armor_marker_.color.a = 1.0;
+  armor_marker_.color.r = 1.0;
+  marker_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("/tracker/marker", 10);
+}
+
+//add
+ExtendedKalmanFilter ArmorTrackerNode::createEKF(double current_dt)
+{
   // EKF
   // xa = x_armor, xc = x_robot_center
   // state: xc, v_xc, yc, v_yc, za, v_za, yaw, v_yaw, r
@@ -110,76 +184,9 @@ ArmorTrackerNode::ArmorTrackerNode(const rclcpp::NodeOptions & options)
   // P - error estimate covariance matrix
   Eigen::DiagonalMatrix<double, 9> p0;
   p0.setIdentity();
-  tracker_->ekf = ExtendedKalmanFilter{f, h, j_f, j_h, u_q, u_r, p0};
-
-  // Reset tracker service
-  using std::placeholders::_1;
-  using std::placeholders::_2;
-  using std::placeholders::_3;
-  reset_tracker_srv_ = this->create_service<std_srvs::srv::Trigger>(
-    "/tracker/reset", [this](
-                        const std_srvs::srv::Trigger::Request::SharedPtr,
-                        std_srvs::srv::Trigger::Response::SharedPtr response) {
-      tracker_->tracker_state = Tracker::LOST;
-      response->success = true;
-      RCLCPP_INFO(this->get_logger(), "Tracker reset!");
-      return;
-    });
-
-  // Subscriber with tf2 message_filter
-  // tf2 relevant
-  tf2_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
-  // Create the timer interface before call to waitForTransform,
-  // to avoid a tf2_ros::CreateTimerInterfaceException exception
-  auto timer_interface = std::make_shared<tf2_ros::CreateTimerROS>(
-    this->get_node_base_interface(), this->get_node_timers_interface());
-  tf2_buffer_->setCreateTimerInterface(timer_interface);
-  tf2_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf2_buffer_);
-  // subscriber and filter
-  armors_sub_.subscribe(this, "/detector/armors", rmw_qos_profile_sensor_data);
-  target_frame_ = this->declare_parameter("target_frame", "odom");
-  tf2_filter_ = std::make_shared<tf2_filter>(
-    armors_sub_, *tf2_buffer_, target_frame_, 10, this->get_node_logging_interface(),
-    this->get_node_clock_interface(), std::chrono::duration<int>(1));
-  // Register a callback with tf2_ros::MessageFilter to be called when transforms are available
-  tf2_filter_->registerCallback(&ArmorTrackerNode::armorsCallback, this);
-
-  // Measurement publisher (for debug usage)
-  info_pub_ = this->create_publisher<auto_aim_interfaces::msg::TrackerInfo>("/tracker/info", 10);
-
-  // Publisher
-  target_pub_ = this->create_publisher<auto_aim_interfaces::msg::Target>(
-    "/tracker/target", rclcpp::SensorDataQoS());
-
-  // Visualization Marker Publisher
-  // See http://wiki.ros.org/rviz/DisplayTypes/Marker
-  position_marker_.ns = "position";
-  position_marker_.type = visualization_msgs::msg::Marker::SPHERE;
-  position_marker_.scale.x = position_marker_.scale.y = position_marker_.scale.z = 0.1;
-  position_marker_.color.a = 1.0;
-  position_marker_.color.g = 1.0;
-  linear_v_marker_.type = visualization_msgs::msg::Marker::ARROW;
-  linear_v_marker_.ns = "linear_v";
-  linear_v_marker_.scale.x = 0.03;
-  linear_v_marker_.scale.y = 0.05;
-  linear_v_marker_.color.a = 1.0;
-  linear_v_marker_.color.r = 1.0;
-  linear_v_marker_.color.g = 1.0;
-  angular_v_marker_.type = visualization_msgs::msg::Marker::ARROW;
-  angular_v_marker_.ns = "angular_v";
-  angular_v_marker_.scale.x = 0.03;
-  angular_v_marker_.scale.y = 0.05;
-  angular_v_marker_.color.a = 1.0;
-  angular_v_marker_.color.b = 1.0;
-  angular_v_marker_.color.g = 1.0;
-  armor_marker_.ns = "armors";
-  armor_marker_.type = visualization_msgs::msg::Marker::CUBE;
-  armor_marker_.scale.x = 0.03;
-  armor_marker_.scale.z = 0.125;
-  armor_marker_.color.a = 1.0;
-  armor_marker_.color.r = 1.0;
-  marker_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("/tracker/marker", 10);
+  return ExtendedKalmanFilter{f, h, j_f, j_h, u_q, u_r, p0};
 }
+
 
 void ArmorTrackerNode::armorsCallback(const auto_aim_interfaces::msg::Armors::SharedPtr armors_msg)
 {
@@ -218,6 +225,8 @@ void ArmorTrackerNode::armorsCallback(const auto_aim_interfaces::msg::Armors::Sh
   if (tracker_->tracker_state == Tracker::LOST) {
     tracker_->init(armors_msg);
     target_msg.tracking = false;
+
+    tracker_->ekf = createEKF(dt_);
   } else {
     dt_ = (time - last_time_).seconds();
     tracker_->dt1 = dt_;
