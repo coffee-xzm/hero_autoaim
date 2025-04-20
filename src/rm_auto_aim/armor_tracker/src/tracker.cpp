@@ -105,7 +105,7 @@ void Tracker::update(const Armors::SharedPtr & armors_msg)
       auto u_q = [this]() {
         Eigen::MatrixXd q(9, 9);
         //double err = (tracked_armor.angle>-50.0)?std::log(-tracked_armor.angle/7)+5.0:std::log((-tracked_armor.angle+170.0)/7)+5.0;
-        double err = (tracked_armor.angle>-50.0)?-tracked_armor.angle/1000:(-tracked_armor.angle+170.0)/1000;
+        double err = (tracked_armor.angle>-50.0)?-tracked_armor.angle/10000:(-tracked_armor.angle+170.0)/10000;
         double t = dt1, x = s2qxyz_1*err, y = s2qyaw_1, r = s2qr_1;
         double q_x_x = pow(t, 4) / 4 * x, q_x_vx = pow(t, 3) / 2 * x, q_vx_vx = pow(t, 2) * x;
         double q_y_y = pow(t, 4) / 4 * y, q_y_vy = pow(t, 3) / 2 * x, q_vy_vy = pow(t, 2) * y;
@@ -129,7 +129,7 @@ void Tracker::update(const Armors::SharedPtr & armors_msg)
       target_state = ekf.update(measurement);
       RCLCPP_DEBUG(rclcpp::get_logger("armor_tracker"), "EKF update");
       //add
-      auto_kal_thres += std::abs(measured_yaw-target_state(6))>0.1?1:0;
+      auto_kal_thres += std::abs(measured_yaw-target_state(6))>0.2?1:0;
     } else if (same_id_armors_count == 1 && yaw_diff > max_match_yaw_diff_) {
       // Matched armor not found, but there is only one armor with the same id
       // and yaw has jumped, take this case as the target is spinning and armor jumped

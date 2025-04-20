@@ -218,6 +218,32 @@ void ArmorTrackerNode::armorsCallback(const auto_aim_interfaces::msg::Armors::Sh
   if (tracker_->tracker_state == Tracker::LOST) {
     tracker_->init(armors_msg);
     target_msg.tracking = false;
+
+    //add
+    auto u_q = [this]() {
+      Eigen::MatrixXd q(9, 9);
+      //double err = (tracked_armor.angle>-50.0)?std::log(-tracked_armor.angle/7)+5.0:std::log((-tracked_armor.angle+170.0)/7)+5.0;
+      //double err = (tracked_armor.angle>-50.0)?-tracked_armor.angle/10000:(-tracked_armor.angle+170.0)/10000;
+      double t = dt_ , x = s2qxyz_, y = s2qyaw_, r = s2qr_;
+      double q_x_x = pow(t, 4) / 4 * x, q_x_vx = pow(t, 3) / 2 * x, q_vx_vx = pow(t, 2) * x;
+      double q_y_y = pow(t, 4) / 4 * y, q_y_vy = pow(t, 3) / 2 * x, q_vy_vy = pow(t, 2) * y;
+      double q_r = pow(t, 4) / 4 * r;
+      // clang-format off
+      //    xc      v_xc    yc      v_yc    za      v_za    yaw     v_yaw   r
+      q <<  q_x_x,  q_x_vx, 0,      0,      0,      0,      0,      0,      0,
+            q_x_vx, q_vx_vx,0,      0,      0,      0,      0,      0,      0,
+            0,      0,      q_x_x,  q_x_vx, 0,      0,      0,      0,      0,
+            0,      0,      q_x_vx, q_vx_vx,0,      0,      0,      0,      0,
+            0,      0,      0,      0,      q_x_x,  q_x_vx, 0,      0,      0,
+            0,      0,      0,      0,      q_x_vx, q_vx_vx,0,      0,      0,
+            0,      0,      0,      0,      0,      0,      q_y_y,  q_y_vy, 0,
+            0,      0,      0,      0,      0,      0,      q_y_vy, q_vy_vy,0,
+            0,      0,      0,      0,      0,      0,      0,      0,      q_r;
+      // clang-format on
+      return q;
+    };
+    tracker_->ekf.update_tmp(u_q);
+
   } else {
     dt_ = (time - last_time_).seconds();
     tracker_->dt1 = dt_;//add
