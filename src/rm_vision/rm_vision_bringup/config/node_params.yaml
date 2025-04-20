@@ -2,7 +2,7 @@
   ros__parameters:
     camera_info_url: package://rm_vision_bringup/config/camera_info.yaml
     exposure_time: 2500
-    gain: 8.0
+    gain: 10.0
 
 /serial_driver:
   ros__parameters:
@@ -24,8 +24,8 @@
     armor.min_light_ratio: 0.8
 
     light.min_fill_ratio: 0.7
-    err1: 0.3
-    err2: 0.003
+    err1: 0.0
+    err2: 0.0
     classifier_threshold: 0.8
     ignore_classes: ["negative"]
 

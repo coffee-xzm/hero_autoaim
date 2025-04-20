@@ -84,8 +84,10 @@ void Tracker::update(const Armors::SharedPtr & armors_msg)
           min_position_diff = position_diff;
           yaw_diff = abs(orientationToYaw(armor.pose.orientation) - ekf_prediction(6));
           tracked_armor = armor;
+          
         }
       }
+      RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "angle:%f",armor.angle);
     }
 
     // Store tracker info
@@ -104,8 +106,12 @@ void Tracker::update(const Armors::SharedPtr & armors_msg)
       //add_auto_kal
       auto u_q = [this]() {
         Eigen::MatrixXd q(9, 9);
-        double err = (tracked_armor.angle>-50.0)?std::log(-tracked_armor.angle/7)+5.0:std::log((-tracked_armor.angle+170.0)/7)+5.0;
-        double t = dt1, x = s2qxyz_1*err, y = s2qyaw_1, r = s2qr_1;
+        double err = (tracked_armor.angle>-50.0)?-tracked_armor.angle/40:(-tracked_armor.angle+170.0)/40;
+
+        //angle会变到90附近，需要调整
+        double t = dt1, x = s2qxyz_1+err, y = s2qyaw_1, r = s2qr_1;
+        RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "dt1=%f, s2qxyz_1=%f, err=%f", dt1, s2qxyz_1, err);
+        RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "qxyz_new:%f",x);
         double q_x_x = pow(t, 4) / 4 * x, q_x_vx = pow(t, 3) / 2 * x, q_vx_vx = pow(t, 2) * x;
         double q_y_y = pow(t, 4) / 4 * y, q_y_vy = pow(t, 3) / 2 * x, q_vy_vy = pow(t, 2) * y;
         double q_r = pow(t, 4) / 4 * r;
