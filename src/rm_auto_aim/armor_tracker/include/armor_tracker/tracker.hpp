@@ -64,6 +64,7 @@ public:
 
   //add
   double dt1, s2qxyz_1, s2qyaw_1, s2qr_1;
+  int detect_count_;
 
 private:
   void initEKF(const Armor & a);
@@ -79,7 +80,7 @@ private:
   double max_match_distance_;
   double max_match_yaw_diff_;
 
-  int detect_count_;
+  
   int lost_count_;
 
   double last_yaw_;

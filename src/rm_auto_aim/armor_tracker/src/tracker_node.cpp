@@ -25,6 +25,8 @@ ArmorTrackerNode::ArmorTrackerNode(const rclcpp::NodeOptions & options)
   s2qxyz_ = declare_parameter("ekf.sigma2_q_xyz", 20.0);
   s2qyaw_ = declare_parameter("ekf.sigma2_q_yaw", 100.0);
   s2qr_ = declare_parameter("ekf.sigma2_q_r", 800.0);
+  r_xyz_factor = declare_parameter("ekf.r_xyz_factor", 0.05);
+  r_yaw = declare_parameter("ekf.r_yaw", 0.02);
 
   tracker_->ekf = createEKF(dt_);
 
@@ -105,6 +107,8 @@ ExtendedKalmanFilter ArmorTrackerNode::createEKF(double current_dt)
   // state: xc, v_xc, yc, v_yc, za, v_za, yaw, v_yaw, r
   // measurement: xa, ya, za, yaw
   // f - Process function
+  RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "createEKF");
+  tracker_->s2qxyz_1 = s2qxyz_;
   auto f = [this](const Eigen::VectorXd & x) {
     Eigen::VectorXd x_new = x;
     x_new(0) += x(1) * dt_;
@@ -175,8 +179,7 @@ ExtendedKalmanFilter ArmorTrackerNode::createEKF(double current_dt)
     return q;
   };
   // update_R - measurement noise covariance matrix
-  r_xyz_factor = declare_parameter("ekf.r_xyz_factor", 0.05);
-  r_yaw = declare_parameter("ekf.r_yaw", 0.02);
+  
   auto u_r = [this](const Eigen::VectorXd & z) {
     Eigen::DiagonalMatrix<double, 4> r;
     double x = r_xyz_factor;
@@ -186,6 +189,7 @@ ExtendedKalmanFilter ArmorTrackerNode::createEKF(double current_dt)
   // P - error estimate covariance matrix
   Eigen::DiagonalMatrix<double, 9> p0;
   p0.setIdentity();
+  RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "create end EKF");
   return ExtendedKalmanFilter{f, h, j_f, j_h, u_q, u_r, p0};
 }
 
@@ -225,14 +229,15 @@ void ArmorTrackerNode::armorsCallback(const auto_aim_interfaces::msg::Armors::Sh
 
   // Update tracker
   if (tracker_->tracker_state == Tracker::LOST) {
+    if(tracker_->detect_count_==0)tracker_->ekf = createEKF(dt_);
     tracker_->init(armors_msg);
     target_msg.tracking = false;
-
-    tracker_->ekf = createEKF(dt_);
+    RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "detect_count_=%i",tracker_->detect_count_);
+    
   } else {
     dt_ = (time - last_time_).seconds();
     tracker_->dt1 = dt_;
-    tracker_->s2qxyz_1 = s2qxyz_;
+    //tracker_->s2qxyz_1 = s2qxyz_;
     tracker_->s2qr_1 = s2qr_;
     tracker_->s2qyaw_1 = s2qyaw_;
     tracker_->lost_thres = static_cast<int>(lost_time_thres_ / dt_);
