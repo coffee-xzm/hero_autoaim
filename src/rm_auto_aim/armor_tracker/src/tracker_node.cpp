@@ -22,6 +22,10 @@ ArmorTrackerNode::ArmorTrackerNode(const rclcpp::NodeOptions & options)
   tracker_->tracking_thres = this->declare_parameter("tracker.tracking_thres", 5);
   lost_time_thres_ = this->declare_parameter("tracker.lost_time_thres", 0.3);
 
+  s2qxyz_ = declare_parameter("ekf.sigma2_q_xyz", 20.0);
+  s2qyaw_ = declare_parameter("ekf.sigma2_q_yaw", 100.0);
+  s2qr_ = declare_parameter("ekf.sigma2_q_r", 800.0);
+
   tracker_->ekf = createEKF(dt_);
 
   // Reset tracker service
@@ -149,9 +153,7 @@ ExtendedKalmanFilter ArmorTrackerNode::createEKF(double current_dt)
     return h;
   };
   // update_Q - process noise covariance matrix
-  s2qxyz_ = declare_parameter("ekf.sigma2_q_xyz", 20.0);
-  s2qyaw_ = declare_parameter("ekf.sigma2_q_yaw", 100.0);
-  s2qr_ = declare_parameter("ekf.sigma2_q_r", 800.0);
+  
   auto u_q = [this]() {
     Eigen::MatrixXd q(9, 9);
     double t = dt_, x = s2qxyz_, y = s2qyaw_, r = s2qr_;
