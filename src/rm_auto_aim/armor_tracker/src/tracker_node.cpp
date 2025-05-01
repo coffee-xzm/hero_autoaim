@@ -218,11 +218,14 @@ void ArmorTrackerNode::armorsCallback(const auto_aim_interfaces::msg::Armors::Sh
   if (tracker_->tracker_state == Tracker::LOST) {
     tracker_->init(armors_msg);
     target_msg.tracking = false;
+
+    aver.clear();
   } else {
     dt_ = (time - last_time_).seconds();
     tracker_->lost_thres = static_cast<int>(lost_time_thres_ / dt_);
     tracker_->update(armors_msg);
-
+    
+    aver.push_back(tracker_->tracked_armor.)
     // Publish Info
     info_msg.position_diff = tracker_->info_position_diff;
     info_msg.yaw_diff = tracker_->info_yaw_diff;

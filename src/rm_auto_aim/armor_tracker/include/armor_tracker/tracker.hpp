@@ -62,6 +62,9 @@ public:
   // To store another pair of armors message
   double dz, another_r;
 
+  //add
+  std::vector<float> aver;
+
 private:
   void initEKF(const Armor & a);
 
