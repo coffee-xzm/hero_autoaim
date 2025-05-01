@@ -30,6 +30,7 @@ Tracker::Tracker(double max_match_distance, double max_match_yaw_diff)
 
 void Tracker::init(const Armors::SharedPtr & armors_msg)
 {
+  flag = 0;
   if (armors_msg->armors.empty()) {
     return;
   }
@@ -108,9 +109,10 @@ void Tracker::update(const Armors::SharedPtr & armors_msg)
       if (tracker_state == TRACKING) {
         float armor_angle = tracked_armor.angle;
         // 判断角度是否接近-0或-90
-        if ((abs(armor_angle) < 1.0) || (abs(armor_angle + 90.0) < 1.0)) {
-          s2qxyz_1 = 0.0000001; // 将s2qxyz_1设置为0
-          s2qr_1 = 0.0001;
+        if ((abs(armor_angle) < 0.1) || (abs(armor_angle + 90.0) < 0.1)) {
+          s2qxyz_1 = 0.000000001; // 将s2qxyz_1设置为0
+          s2qr_1 = 0.001;
+          flag = 1;
           RCLCPP_INFO(rclcpp::get_logger("armor_tracker"), "Armor angle near -0 or -90, set s2qxyz_1 to 0");
         }
       }

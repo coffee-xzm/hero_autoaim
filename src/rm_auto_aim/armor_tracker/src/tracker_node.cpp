@@ -217,7 +217,8 @@ void ArmorTrackerNode::armorsCallback(const auto_aim_interfaces::msg::Armors::Sh
 
   // Update tracker
   if (tracker_->tracker_state == Tracker::LOST) {
-    if(tracker_->detect_count_==0)tracker_->init(armors_msg);
+    //if(tracker_->detect_count_==0)tracker_->init(armors_msg);
+    tracker_->init(armors_msg);
     target_msg.tracking = false;
     RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "detect_count_=%i",tracker_->detect_count_);
     
@@ -256,11 +257,14 @@ void ArmorTrackerNode::armorsCallback(const auto_aim_interfaces::msg::Armors::Sh
       target_msg.position.z = state(4);
       target_msg.velocity.z = state(5);
       target_msg.yaw = state(6);
-      target_msg.v_yaw = state(7);
-      target_msg.radius_1 = state(8);
+      // target_msg.v_yaw = state(7);
+      target_msg.v_yaw = state(7)>0?2.5:-2.5;
+      // target_msg.radius_1 = state(8);
+      target_msg.radius_1 = 0.26;
       target_msg.radius_2 = tracker_->another_r;
       target_msg.dz = tracker_->dz;
     }
+    if(tracker_->flag == 1) RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "angldfghsdrthsrthghserthsertrhzsrthzsethzaethazehyaeae5rhyazetthazehujaze5thujazettujhuhazehjzedtdhujzaethujzseujzethuj");
   }
 
   last_time_ = time;

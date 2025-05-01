@@ -65,6 +65,7 @@ public:
   //add
   double dt1, s2qxyz_1, s2qyaw_1, s2qr_1;
   int detect_count_;
+  int flag;
 
 private:
   void initEKF(const Armor & a);
