@@ -264,7 +264,8 @@ void ArmorTrackerNode::armorsCallback(const auto_aim_interfaces::msg::Armors::Sh
       target_msg.radius_2 = tracker_->another_r;
       target_msg.dz = tracker_->dz;
     }
-    if(tracker_->flag == 1) RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "angldfghsdrthsrthghserthsertrhzsrthzsethzaethazehyaeae5rhyazetthazehujaze5thujazettujhuhazehjzedtdhujzaethujzseujzethuj");
+    if(tracker_->flag > 0) RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "angldfghsdrthsrthghserthsertrhzsrthzsethzaethazehyaeae5rhyazetthazehujaze5thujazettujhuhazehjzedtdhujzaethujzseujzethuj");
+    if(tracker_->flag1 != 0 )RCLCPP_WARN(rclcpp::get_logger("armor_tracker"), "fixed");
   }
 
   last_time_ = time;
